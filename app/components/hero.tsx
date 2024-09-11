@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react";
 import Image from "next/image";
 import { Section } from "./section";
 import { ButtonGithub } from "./socials/button-github";
@@ -9,15 +8,16 @@ export const Hero: React.FC = () => {
   return (
     <Section className="flex flex-row items-center s">
       <div className="flex flex-col gap-2 flex-[3]">
-        <div className="flex flex-col">
-          <h1 className="text-5xl font-caption">Loïc Greco</h1>
-          <p className="text-3xl font-caption">Web Developer Freelance</p>
-          <div className="flex flex-row gap-2">
+        <div className="flex flex-col ">
+          <h1 className="text-5xl font-caption leading-none">loïc greco</h1>
+          <p className="px-6 text-3xl font-caption">web developer freelance</p>
+          {/* // ? Si envie d'ajouter ma localisation */}
+          {/* <div className="px-6 flex flex-row gap-2">
             <MapPin size={18} />
             Lyon, France
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="mx-6 flex flex-row gap-2">
           <ButtonGithub />
           <ButtonLinkedin />
           <ButtonGmail />

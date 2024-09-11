@@ -28,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={cn(questrial.variable, poppins.variable, "font-sans h-full")}
+        className={cn(
+          questrial.variable,
+          poppins.variable,
+          "font-sans dark h-full"
+        )}
       >
         {children}
       </body>

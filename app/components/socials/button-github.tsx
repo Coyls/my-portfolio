@@ -8,9 +8,9 @@ export const ButtonGithub: React.FC = () => {
     <Link
       href="https://github.com/Coyls"
       target="_blank"
-      className={cn(buttonVariants({ variant: "outline" }), "p-0 size-9")}
+      className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <SiGithub size={20} className="text-foreground" />
+      <SiGithub size={20} className="text-primary" />
     </Link>
   );
 };

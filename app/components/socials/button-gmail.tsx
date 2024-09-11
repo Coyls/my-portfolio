@@ -6,11 +6,11 @@ import Link from "next/link";
 export const ButtonGmail: React.FC = () => {
   return (
     <Link
-      href="https://github.com/Coyls"
+      href="mailto:loic.grecofr@gmail.com"
       target="_blank"
-      className={cn(buttonVariants({ variant: "outline" }), "p-0 size-9")}
+      className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <SiGmail size={20} className="text-foreground" />
+      <SiGmail size={20} className="text-primary" />
     </Link>
   );
 };

@@ -6,11 +6,11 @@ import Link from "next/link";
 export const ButtonLinkedin: React.FC = () => {
   return (
     <Link
-      href="https://github.com/Coyls"
+      href="https://www.linkedin.com/in/loïc-greco"
       target="_blank"
-      className={cn(buttonVariants({ variant: "outline" }), "p-0 size-9")}
+      className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <SiLinkedin size={20} className="text-foreground" />
+      <SiLinkedin size={20} className="text-primary" />
     </Link>
   );
 };

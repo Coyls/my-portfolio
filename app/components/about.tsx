@@ -2,18 +2,15 @@ import { Section } from "./section";
 
 export const About: React.FC = () => {
   return (
-    <Section>
-      <div className="flex flex-col gap-2">
-        <h2 className="text-4xl font-caption">About</h2>
-        <p>
-          My name is Loïc, and I’m a passionate web developer with skills in
-          both frontend and backend. I love learning new skills and exploring
-          technologies to keep improving. I enjoy creating solid and tailored
-          web solutions for each project. Whether it&apos;s coding client-side
-          features or managing the server, I&apos;m always on the lookout for
-          new challenges.
-        </p>
-      </div>
+    <Section className="flex flex-col gap-2">
+      <h2 className="text-6xl font-caption">about.</h2>
+      <p className="px-6 text-justify">
+        I’m a passionate web developer with skills in both frontend and backend.
+        I love learning new skills and exploring technologies to keep improving.
+        I enjoy creating solid and tailored web solutions for each project.
+        Whether it&apos;s coding client-side features or managing the server,
+        I&apos;m always on the lookout for new challenges.
+      </p>
     </Section>
   );
 };

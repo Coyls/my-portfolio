@@ -20,7 +20,7 @@ export const Project: React.FC<ProjectProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("rounded-2xl bg-primary/5 p-8", className)}>
+    <div className={cn("rounded-lg bg-primary/5 p-8", className)}>
       <div className="flex h-full flex-col justify-between gap-4">
         <Link href={link} target="_blank">
           <Button variant="link" className="p-0">

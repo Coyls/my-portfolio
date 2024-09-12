@@ -42,7 +42,7 @@ export const Projects: React.FC = () => {
             link="https://workshop-dataviz.vercel.app/"
           />
         </div>
-        <div className="rounded-2xl bg-primary/5 p-8 text-center">
+        <div className="rounded-lg bg-primary/5 p-8 text-center">
           Envie de voir plus de projets ? Jeter un oeil à mon{" "}
           <Link href="https://github.com/Coyls" target="_blank">
             <Button variant="link" className="p-0 text-base">

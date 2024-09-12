@@ -16,7 +16,7 @@ export const Divider: React.FC<DividerProps> = ({
         className={cn(
           "border-accent",
           orientation === "horizontal" ? "h-[1px] w-full" : "h-full w-[1px]",
-          className
+          className,
         )}
       />
     </Section>

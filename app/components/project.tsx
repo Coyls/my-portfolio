@@ -20,15 +20,15 @@ export const Project: React.FC<ProjectProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("bg-primary/5 p-10 rounded-2xl", className)}>
-      <div className="flex flex-col gap-4 justify-between h-full">
+    <div className={cn("rounded-2xl bg-primary/5 p-8", className)}>
+      <div className="flex h-full flex-col justify-between gap-4">
         <Link href={link} target="_blank">
           <Button variant="link" className="p-0">
-            <h3 className="text-3xl font-caption leading-9">{name}</h3>
+            <h3>{name}</h3>
           </Button>
         </Link>
-        <p className="text-justify text-base max-w-lg">{description}</p>
-        <div className="flex flex-row gap-3">
+        <p className="max-w-lg text-justify text-sm">{description}</p>
+        <div className="flex flex-row gap-4">
           {technologies.map((Icon, index) => (
             <Icon key={`${name}-${index}-icon`} />
           ))}

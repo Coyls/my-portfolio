@@ -5,7 +5,7 @@ import { Section } from "./section";
 export const Footer: React.FC = () => {
   return (
     <Section>
-      <footer className="flex flex-col gap-4 items-center justify-center py-10">
+      <footer className="flex flex-col items-center justify-center py-8">
         <p className="text-center text-sm">
           Made with ❤️ by{" "}
           <Link href="https://github.com/Coyls" target="_blank">

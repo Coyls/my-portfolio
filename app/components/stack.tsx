@@ -1,36 +1,83 @@
+import { cn } from "@/lib/utils";
+import {
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiTailwindcss,
+  SiTypescript,
+} from "@icons-pack/react-simple-icons";
 import { Section } from "./section";
+import { Skill } from "./skill";
+
+const stack = [
+  {
+    name: "language",
+    skills: [
+      {
+        name: "Typescript",
+        icon: <SiTypescript className="size-10" />,
+      },
+      {
+        name: "Python",
+        icon: <SiPython className="size-10" />,
+      },
+    ],
+  },
+  {
+    name: "frontend",
+    skills: [
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs className="size-10" />,
+      },
+      {
+        name: "TailwindCSS",
+        icon: <SiTailwindcss className="size-10" />,
+      },
+    ],
+  },
+  {
+    name: "backend",
+    skills: [
+      {
+        name: "Prisma",
+        icon: <SiPrisma className="size-10" />,
+      },
+      {
+        name: "PostgreSQL",
+        icon: <SiPostgresql className="size-10" />,
+      },
+    ],
+  },
+];
 
 export const Stack: React.FC = () => {
   return (
-    <Section className="flex flex-col gap-4">
-      <h2 className="text-6xl font-caption">stack.</h2>
-      <div className="flex flex-row justify-center">
-        <div className="flex flex-col gap-4">
-          <h3 className="text-3xl font-caption">language</h3>
-          <ul className="list-disc list-inside">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>TailwindCSS</li>
-          </ul>
-        </div>
-        <div className="h-full w-[1px] border-accent"></div>
-        <div className="flex flex-col gap-4">
-          <h3 className="text-3xl font-caption">front-end</h3>
-          <ul className="list-disc list-inside">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>TailwindCSS</li>
-          </ul>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h3 className="text-3xl font-caption">back-end</h3>
-          <ul className="list-disc list-inside">
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-            <li>Prisma</li>
-          </ul>
-        </div>
+    <Section className="flex flex-col gap-8">
+      <h2>stack.</h2>
+      <div className="grid grid-cols-3 justify-center">
+        {stack.map(({ name, skills }, id, array) => {
+          const isLast = id === array.length - 1;
+
+          return (
+            <div
+              key={name}
+              className={cn(
+                "flex flex-col items-center gap-8",
+                "p-8",
+                isLast ? "" : "border-r-[1px] border-r-accent",
+              )}
+            >
+              <h3>{name}</h3>
+              <div className="flex flex-row gap-4">
+                {skills.map(({ name, icon }) => (
+                  <Skill key={name}>{icon}</Skill>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </Section>
   );

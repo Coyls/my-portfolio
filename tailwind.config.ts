@@ -61,13 +61,14 @@ const config: Config = {
         caption: ["var(--font-questrial)"],
       },
       fontSize: {
-        sm: "0.750rem",
-        base: "1rem",
-        xl: "1.333rem",
-        "2xl": "1.777rem",
-        "3xl": "2.369rem",
-        "4xl": "3.158rem",
-        "5xl": "4.210rem",
+        sm: "0.750rem", // description
+        base: "1rem", // p
+        xl: "1.333rem", // h6
+        "2xl": "1.777rem", // h5
+        "3xl": "2.369rem", // h4
+        "4xl": "3.158rem", // h3
+        "5xl": "4.210rem", // h2
+        "6xl": "5.611rem", // h1
       },
     },
   },

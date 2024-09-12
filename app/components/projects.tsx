@@ -13,9 +13,9 @@ import { Section } from "./section";
 
 export const Projects: React.FC = () => {
   return (
-    <Section className="flex flex-col gap-4">
-      <h2 className="text-6xl font-caption">projects.</h2>
-      <div className="flex flex-col gap-4">
+    <Section className="flex flex-col gap-8">
+      <h2>projects.</h2>
+      <div className="flex flex-col gap-8 px-8">
         <Project
           name="Septem"
           description="Application Web pour compter les point et obtenir des statistiques de
@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
           // todo: ajouter lien
           link="/"
         />
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-8">
           <Project
             name="Wake"
             description="Landing page pour un projet d'exposition interactive. 
@@ -42,12 +42,12 @@ export const Projects: React.FC = () => {
             link="https://workshop-dataviz.vercel.app/"
           />
         </div>
-        <div className="bg-primary/5 p-5 rounded-2xl text-center">
+        <div className="rounded-2xl bg-primary/5 p-8 text-center">
           Envie de voir plus de projets ? Jeter un oeil à mon{" "}
           <Link href="https://github.com/Coyls" target="_blank">
             <Button variant="link" className="p-0 text-base">
               Github
-            </Button>
+            </Button>{" "}
             !
           </Link>
         </div>

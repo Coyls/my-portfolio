@@ -1,9 +1,11 @@
 import { cn } from "@/lib/utils";
 import {
+  SiDocker,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
   SiPython,
+  SiReact,
   SiTailwindcss,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
@@ -28,8 +30,8 @@ const stack = [
     name: "frontend",
     skills: [
       {
-        name: "Next.js",
-        icon: <SiNextdotjs className="size-10" />,
+        name: "React",
+        icon: <SiReact className="size-10" />,
       },
       {
         name: "TailwindCSS",
@@ -41,12 +43,20 @@ const stack = [
     name: "backend",
     skills: [
       {
+        name: "Next.js",
+        icon: <SiNextdotjs className="size-10" />,
+      },
+      {
         name: "Prisma",
         icon: <SiPrisma className="size-10" />,
       },
       {
         name: "PostgreSQL",
         icon: <SiPostgresql className="size-10" />,
+      },
+      {
+        name: "Docker",
+        icon: <SiDocker className="size-10" />,
       },
     ],
   },
@@ -64,13 +74,12 @@ export const Stack: React.FC = () => {
             <div
               key={name}
               className={cn(
-                "flex flex-col items-center gap-8",
-                "p-8",
+                "flex flex-col items-center gap-8 p-8",
                 isLast ? "" : "border-r-[1px] border-r-accent",
               )}
             >
               <h3>{name}</h3>
-              <div className="flex flex-row gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {skills.map(({ name, icon }) => (
                   <Skill key={name}>{icon}</Skill>
                 ))}

@@ -18,10 +18,12 @@ export const Experiences: React.FC = () => {
           <div>
             <Link href="https://prismo.io/" target="_blank">
               <Button variant="link" className="p-0">
-                <h3 className="text-2xl font-caption">PRISMO</h3>
+                <h3 className="text-3xl font-caption">PRISMO</h3>
               </Button>
             </Link>
-            <h4 className="text-xl font-caption">Développeur Web Full Stack</h4>
+            <h4 className="text-2xl font-caption">
+              Développeur Web Full Stack
+            </h4>
           </div>
           <div className="text-right">
             <h3 className="text-xl">2021 - 2023</h3>

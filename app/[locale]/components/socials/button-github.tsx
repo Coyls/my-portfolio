@@ -8,7 +8,7 @@ type ButtonGithubProps = {
   className?: string;
 };
 
-export const ButtonGithub: React.FC<ButtonGithubProps> = ({
+export const ButtonGithub: React.FC<ButtonGithubProps> = async ({
   href,
   className,
 }) => {
@@ -18,7 +18,7 @@ export const ButtonGithub: React.FC<ButtonGithubProps> = ({
       target="_blank"
       className={cn(
         buttonVariants({ variant: "ghost", size: "icon" }),
-        className
+        className,
       )}
     >
       <SiGithub size={20} className="text-primary" />

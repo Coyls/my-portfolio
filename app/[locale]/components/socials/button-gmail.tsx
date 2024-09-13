@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { SiGmail } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
-export const ButtonGmail: React.FC = () => {
+export const ButtonGmail: React.FC = async () => {
   return (
     <Link
       href="mailto:loic.grecofr@gmail.com"

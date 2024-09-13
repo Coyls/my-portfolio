@@ -1,16 +1,19 @@
+import { getScopedI18n } from "@/locales/server";
 import Image from "next/image";
-import { Section } from "./section";
-import { ButtonGithub } from "./socials/button-github";
-import { ButtonGmail } from "./socials/button-gmail";
-import { ButtonLinkedin } from "./socials/button-linkedin";
+import { ButtonGithub } from "../socials/button-github";
+import { ButtonGmail } from "../socials/button-gmail";
+import { ButtonLinkedin } from "../socials/button-linkedin";
+import { Section } from "../utils/section";
 
-export const Hero: React.FC = () => {
+export const Hero: React.FC = async () => {
+  const t = await getScopedI18n("hero");
+
   return (
     <Section className="s flex flex-row items-center">
       <div className="flex flex-[3] flex-col">
-        <h1>loïc greco</h1>
+        <h1>Loïc Greco</h1>
         <div className="flex flex-col pl-8">
-          <h3>web developer freelance</h3>
+          <h3>{t("subtitle")}</h3>
           {/* // ? Si envie d'ajouter ma localisation */}
           {/* <div className="flex flex-row gap-4">
             <MapPin size={18} />

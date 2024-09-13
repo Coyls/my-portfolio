@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Section } from "./section";
+import { Section } from "../utils/section";
 
-export const Footer: React.FC = () => {
+export const Footer: React.FC = async () => {
   return (
     <Section>
       <footer className="flex flex-col items-center justify-center py-8">

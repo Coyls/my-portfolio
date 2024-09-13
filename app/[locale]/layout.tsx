@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Poppins, Questrial } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const questrial = Questrial({
   subsets: ["latin"],
@@ -22,19 +23,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={cn(
-          questrial.variable,
-          poppins.variable,
-          "font-sans dark h-full"
-        )}
+        className={cn(questrial.variable, poppins.variable, "h-full font-sans")}
       >
-        {children}
+        <Providers locale={params.locale}>{children}</Providers>
       </body>
     </html>
   );

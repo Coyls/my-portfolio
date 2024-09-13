@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
-import { Section } from "./section";
+import { Section } from "../utils/section";
 
 type DividerProps = {
   className?: string;
   orientation?: "horizontal" | "vertical";
 };
 
-export const Divider: React.FC<DividerProps> = ({
+export const Divider: React.FC<DividerProps> = async ({
   className,
   orientation = "horizontal",
 }) => {

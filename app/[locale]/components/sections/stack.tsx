@@ -9,8 +9,8 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
-import { Section } from "./section";
-import { Skill } from "./skill";
+import { Section } from "../utils/section";
+import { Skill } from "../utils/skill";
 
 const stack = [
   {
@@ -27,7 +27,7 @@ const stack = [
     ],
   },
   {
-    name: "frontend",
+    name: "front-end",
     skills: [
       {
         name: "React",
@@ -40,7 +40,7 @@ const stack = [
     ],
   },
   {
-    name: "backend",
+    name: "back-end",
     skills: [
       {
         name: "Next.js",
@@ -62,7 +62,7 @@ const stack = [
   },
 ];
 
-export const Stack: React.FC = () => {
+export const Stack: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>stack.</h2>
@@ -79,7 +79,7 @@ export const Stack: React.FC = () => {
               )}
             >
               <h3>{name}</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="my-auto grid grid-cols-2 gap-4">
                 {skills.map(({ name, icon }) => (
                   <Skill key={name}>{icon}</Skill>
                 ))}

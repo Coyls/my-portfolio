@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export const Spacer: React.FC<{ size?: "sm" | "md" | "lg" }> = ({
+export const Spacer: React.FC<{ size?: "sm" | "md" | "lg" }> = async ({
   size = "md",
 }) => {
   return (

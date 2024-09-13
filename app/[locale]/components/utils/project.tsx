@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { IconType } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
+import React from "react";
 import { ButtonGithub } from "../socials/button-github";
 
 type ProjectProps = {
-  name: string;
+  name: React.ReactNode;
   description: string;
   technologies: IconType[];
   link: string;
@@ -22,7 +23,7 @@ export const Project: React.FC<ProjectProps> = async ({
   githubLink,
 }) => {
   return (
-    <div className={cn("rounded-lg bg-primary/5 p-8", className)}>
+    <div className={cn("rounded-lg bg-primary/5 p-4 md:p-8", className)}>
       <div className="flex h-full flex-col justify-between gap-4">
         <div className="flex w-full flex-row justify-between">
           <Link href={link} target="_blank">

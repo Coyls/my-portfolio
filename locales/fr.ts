@@ -11,7 +11,7 @@ export default {
   },
   experiences: {
     prismo: {
-      career: "Développeur Web Full Stack",
+      career: "Développeur Full Stack",
       status: "alternant",
       description:
         "Développement des différentes applications web de l’entreprise.",
@@ -35,7 +35,10 @@ export default {
         "Projet réaliser en une semaine pour un projet d'ecole. Je me suis occupé de la plus part des animation du site et créé la logique Flip-book pour les animations au scroll.",
     },
     more: {
-      description: "Envie de voir plus de projets ? Jeter un oeil à mon ",
+      description: {
+        desktop: "Envie de voir plus de projets ? Jeter un oeil à mon ",
+        mobile: "Plus de projets sur mon ",
+      },
     },
   },
 } as const;

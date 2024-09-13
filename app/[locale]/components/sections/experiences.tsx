@@ -16,8 +16,8 @@ export const Experiences: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>experiences.</h2>
-      <div className="flex flex-col gap-4 px-8">
-        <div className="flex flex-row justify-between">
+      <div className="flex flex-col gap-4 px-4 md:px-8">
+        <div className="flex flex-col justify-between md:flex-row">
           <div>
             <Link href="https://prismo.io/" target="_blank">
               <Button variant="link" className="p-0">
@@ -26,7 +26,7 @@ export const Experiences: React.FC = async () => {
             </Link>
             <h4>{t("prismo.career")}</h4>
           </div>
-          <div className="text-right">
+          <div className="flex flex-col md:text-right">
             <h5>2021 - 2023</h5>
             <h5>{t("prismo.status")}</h5>
           </div>

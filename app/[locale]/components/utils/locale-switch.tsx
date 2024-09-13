@@ -10,6 +10,7 @@ export const LocaleSwitch: React.FC = () => {
   return (
     <div>
       <Button
+        className="p-0"
         variant="link"
         onClick={() => changeLocale(locale === "en" ? "fr" : "en")}
       >

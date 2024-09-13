@@ -7,7 +7,7 @@ export const About: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>about.</h2>
-      <p className="px-8 text-justify">{t("description")}</p>
+      <p className="px-4 text-justify md:px-8">{t("description")}</p>
     </Section>
   );
 };

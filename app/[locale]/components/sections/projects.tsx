@@ -21,9 +21,9 @@ export const Projects: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>projects.</h2>
-      <div className="grid grid-cols-5 gap-4 px-8">
+      <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-5 md:px-8">
         <Project
-          className="col-span-3"
+          className="md:col-span-3"
           name="Septem"
           description={t("septem.description")}
           technologies={[SiNextdotjs, SiTailwindcss, SiPrisma, SiPostgresql]}
@@ -32,7 +32,7 @@ export const Projects: React.FC = async () => {
         />
 
         <Project
-          className="col-span-2"
+          className="md:col-span-2"
           name="Wake"
           description={t("wake.description")}
           technologies={[SiNextdotjs, SiTailwindcss, SiGreensock]}
@@ -41,7 +41,7 @@ export const Projects: React.FC = async () => {
         />
 
         <Project
-          className="col-span-2"
+          className="md:col-span-2"
           name="Siah"
           description={t("siah.description")}
           technologies={[SiNextdotjs, SiTailwindcss]}
@@ -50,21 +50,30 @@ export const Projects: React.FC = async () => {
         />
 
         <Project
-          className="col-span-3"
-          name="KTK | Back-end"
+          className="md:col-span-3"
+          name={
+            <>
+              KTK<span className="hidden md:inline">{" | Back-end"}</span>
+            </>
+          }
           description={t("ktk.description")}
           technologies={[SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
           link="http://vps-080d9e1e.vps.ovh.net:3100/"
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
         />
 
-        <div className="col-span-5 rounded-lg bg-primary/5 p-8 text-center text-sm">
-          {t("more.description")}
+        <div className="rounded-lg bg-primary/5 p-4 text-center text-sm md:col-span-5 md:p-8">
+          <span className="hidden md:inline">
+            {t("more.description.desktop")}
+          </span>
+          <span className="inline md:hidden">
+            {t("more.description.mobile")}
+          </span>
           <Link href="https://github.com/Coyls" target="_blank">
             <Button variant="link" className="h-auto p-0">
               Github
-            </Button>{" "}
-            !
+            </Button>
+            <span>{" !"}</span>
           </Link>
         </div>
       </div>

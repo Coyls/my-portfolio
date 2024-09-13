@@ -11,7 +11,7 @@ export default {
   },
   experiences: {
     prismo: {
-      career: "Full Stack Web Developer",
+      career: "Full Stack Developer",
       status: "intern",
       description: "Development of the company's various web applications.",
     },
@@ -34,7 +34,10 @@ export default {
         "Project completed in one week for a school project. I handled most of the site's animations and created the Flip-book logic for scroll animations.",
     },
     more: {
-      description: "Want to see more projects? Take a look at my ",
+      description: {
+        desktop: "Want to see more projects? Take a look at my ",
+        mobile: "More projects on my ",
+      },
     },
   },
 } as const;

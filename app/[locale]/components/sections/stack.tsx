@@ -14,7 +14,7 @@ import { Skill } from "../utils/skill";
 
 const stack = [
   {
-    name: "language",
+    name: "languages",
     skills: [
       {
         name: "Typescript",
@@ -64,9 +64,11 @@ const stack = [
 
 export const Stack: React.FC = async () => {
   return (
-    <Section className="flex flex-col gap-8">
-      <h2>stack.</h2>
-      <div className="grid grid-cols-3 justify-center">
+    <Section className="flex flex-col md:gap-8">
+      <h2>
+        <span className="hidden md:inline">favorite</span> technologies.
+      </h2>
+      <div className="grid-col-1 grid justify-center md:grid-cols-3">
         {stack.map(({ name, skills }, id, array) => {
           const isLast = id === array.length - 1;
 
@@ -74,8 +76,9 @@ export const Stack: React.FC = async () => {
             <div
               key={name}
               className={cn(
-                "flex flex-col items-center gap-8 p-8",
-                isLast ? "" : "border-r-[1px] border-r-accent",
+                "flex flex-col items-center gap-4 p-8 md:gap-8",
+                isLast ? "" : "md:border-r-[1px] md:border-r-accent",
+                isLast ? "" : "border-b-[1px] border-b-accent md:border-b-0",
               )}
             >
               <h3>{name}</h3>

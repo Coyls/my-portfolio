@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 16px;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 90%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 90%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 90%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 32 100% 35%;
+    --primary-foreground: 0 0% 90%;
+    --secondary: 27 59% 66%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 22 73% 51%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 7%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 22 73% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 93%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 93%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 32 100% 65%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 27 59% 34%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 0 0% 80%;
+    --muted-foreground: 0 0% 93%;
+    --accent: 22 73% 49%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 10%;
+    --border: 0 0% 60%;
+    --input: 0 0% 80%;
+    --ring: 22 73% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Perfect Fourth : 1.333 */
+  h1 {
+    @apply font-caption text-5xl;
+  }
+  h2 {
+    @apply font-caption text-4xl;
+  }
+  h3 {
+    @apply font-caption text-3xl;
+  }
+  h4 {
+    @apply font-caption text-2xl;
+  }
+  h5 {
+    @apply font-caption text-xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

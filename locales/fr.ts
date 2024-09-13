@@ -20,15 +20,19 @@ export default {
   projects: {
     septem: {
       description:
-        "Application Web pour compter les point et obtenir des statistiques de ses parties du jeu de société Seven Wonders. Objectif crée une Saasutile et progresser sur ma stack.",
+        "Application Web pour compter les point et obtenir des statistiques de ses parties du jeu de société Seven Wonders. Objectif crée une Saas utile et progresser sur ma stack.",
+    },
+    ktk: {
+      description:
+        "Application Web pour un projet d'ecole. Objectif visualiser des données sur une carte. Nous avons mis en paralelle des facteur economique (PIB/Budjet Sportif) avec les resultats au JO.",
     },
     wake: {
       description:
-        "Landing page pour un projet d'étude. J'ai concu le site du Design au Dévelopement et utilisé GSAP pour la plus part des animations.",
+        "Landing page pour un projet d'ecole. J'ai concu le site du Design au Dévelopement et utilisé GSAP pour la plus part des animations.",
     },
     siah: {
       description:
-        "Projet réaliser en une semaine pour un projet d'étude. Je me suis occupé de la plus part des animation du site etcréé la logique Flip-book pour les animations au scroll.",
+        "Projet réaliser en une semaine pour un projet d'ecole. Je me suis occupé de la plus part des animation du site et créé la logique Flip-book pour les animations au scroll.",
     },
     more: {
       description: "Envie de voir plus de projets ? Jeter un oeil à mon ",

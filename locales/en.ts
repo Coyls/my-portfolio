@@ -3,7 +3,7 @@ export default {
     available: "AVAILABLE FOR",
   },
   hero: {
-    subtitle: "Web Developer Freelance",
+    subtitle: "Freelance Web Developer",
   },
   about: {
     description:
@@ -12,26 +12,26 @@ export default {
   experiences: {
     prismo: {
       career: "Full Stack Developer",
-      status: "intern",
+      status: "Intern",
       description: "Development of the company's various web applications.",
     },
   },
   projects: {
     septem: {
       description:
-        "Web application to count points and get statistics for games of the board game Seven Wonders. Goal: create a useful SaaS and improve my stack.",
+        "Web application to count points and get statistics for the board game Seven Wonders. Goal: create a useful SaaS and improve my stack.",
     },
     ktk: {
       description:
-        "Web application for a school project. Goal: visualize data on a map. We compared economic factors (GDP/Sports Budget) with the results at the Olympics.",
+        "Web application for a school project. Goal: visualize data on a map. We compared economic factors (GDP/Sports Budget) with Olympic results.",
     },
     wake: {
       description:
-        "Landing page for a school project. I designed the site from Design to Development and used GSAP for most of the animations.",
+        "Landing page for a school project. I designed the site from scratch, from Design to Development, and used GSAP for most of the animations.",
     },
     siah: {
       description:
-        "Project completed in one week for a school project. I handled most of the site's animations and created the Flip-book logic for scroll animations.",
+        "Project completed in one week for a school assignment. I handled most of the site's animations and created the flip-book logic for scroll animations.",
     },
     more: {
       description: {

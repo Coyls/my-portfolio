@@ -17,16 +17,21 @@ export const Projects: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>projects.</h2>
-      <div className="flex flex-col gap-8 px-8">
-        <Project
-          name="Septem"
-          description={t("septem.description")}
-          technologies={[SiNextdotjs, SiTailwindcss, SiPrisma, SiPostgresql]}
-          // todo: ajouter lien
-          link="https://github.com/Coyls"
-        />
-        <div className="flex flex-row gap-8">
+      <div className="flex flex-col gap-4 px-8">
+        <div className="flex flex-row gap-4">
           <Project
+            className="flex-3"
+            name="Septem"
+            description={t("septem.description")}
+            technologies={[SiNextdotjs, SiTailwindcss, SiPrisma, SiPostgresql]}
+            // todo: ajouter le lien
+            link="https://github.com/Coyls"
+          />
+        </div>
+
+        <div className="flex flex-row gap-4">
+          <Project
+            className="flex-3"
             name="Wake"
             description={t("wake.description")}
             technologies={[SiNextdotjs, SiTailwindcss, SiGreensock]}
@@ -34,6 +39,7 @@ export const Projects: React.FC = async () => {
             githubLink="https://github.com/Coyls/wake"
           />
           <Project
+            className="flex-2"
             name="Siah"
             description={t("siah.description")}
             technologies={[SiNextdotjs, SiTailwindcss]}

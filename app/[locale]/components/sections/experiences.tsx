@@ -34,7 +34,10 @@ export const Experiences: React.FC = async () => {
 
         <p className="max-w-xl text-justify text-base">
           {t("prismo.description")} <br />
-          <Link href="https://app.prismo.io/" target="_blank">
+          <Link
+            href="https://app.prismo.io/fr/profil/loic-greco/accueil"
+            target="_blank"
+          >
             <Button variant="link" className="p-0">
               <p className="text-base">App</p>
             </Button>

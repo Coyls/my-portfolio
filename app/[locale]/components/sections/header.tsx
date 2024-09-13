@@ -8,7 +8,7 @@ export const Header: React.FC = async () => {
     <header className="top-0 py-4">
       <Section className="flex items-baseline justify-between">
         <ButtonAvailable />
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 self-center">
           <ThemeSwitch />
           <LocaleSwitch />
         </div>

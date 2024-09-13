@@ -29,7 +29,7 @@ export default function RootLayout({
   params: { locale: string };
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" style={{ colorScheme: "dark" }} className="dark">
       <body
         className={cn(questrial.variable, poppins.variable, "h-full font-sans")}
       >

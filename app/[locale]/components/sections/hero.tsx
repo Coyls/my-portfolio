@@ -29,10 +29,12 @@ export const Hero: React.FC = async () => {
       <div className="flex-[1]">
         <div className="relative size-48 md:size-64">
           <Image
+            className="rounded-full"
             fill
             src="/me.png"
             alt="Picture of Loïc Greco"
-            className="rounded-full"
+            sizes="(max-width: 768px) 80vw, 40vw"
+            priority
           />
         </div>
       </div>

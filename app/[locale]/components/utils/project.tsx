@@ -4,6 +4,7 @@ import { IconType } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import React from "react";
 import { ButtonGithub } from "../socials/button-github";
+import { ButtonNotResponsive } from "./button-not-responsive";
 
 type ProjectProps = {
   name: React.ReactNode;
@@ -12,6 +13,7 @@ type ProjectProps = {
   link: string;
   githubLink?: string;
   className?: string;
+  responsive?: boolean;
 };
 
 export const Project: React.FC<ProjectProps> = async ({
@@ -21,16 +23,23 @@ export const Project: React.FC<ProjectProps> = async ({
   technologies,
   className,
   githubLink,
+  responsive = true,
 }) => {
   return (
     <div className={cn("rounded-lg bg-primary/5 p-4 md:p-8", className)}>
       <div className="flex h-full flex-col justify-between gap-4">
         <div className="flex w-full flex-row justify-between">
-          <Link href={link} target="_blank">
-            <Button variant="link" className="p-0">
-              <h3>{name}</h3>
-            </Button>
-          </Link>
+          {responsive ? (
+            <Link href={link} target="_blank">
+              <Button variant="link" className="p-0">
+                <h3 className="leading-none">{name}</h3>
+              </Button>
+            </Link>
+          ) : (
+            <ButtonNotResponsive href={link}>
+              <h3 className="leading-none">{name}</h3>
+            </ButtonNotResponsive>
+          )}
 
           {githubLink && (
             <ButtonGithub href={githubLink} className="float float-right" />

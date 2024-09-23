@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SiteConfig } from "@/site-config";
 import Link from "next/link";
 import { LocaleSwitch } from "../utils/locale-switch";
 import { Section } from "../utils/section";
@@ -10,7 +11,7 @@ export const Footer: React.FC = async () => {
       <footer className="flex flex-col items-center justify-center py-4">
         <p className="text-center text-sm">
           <span>Made by </span>
-          <Link href="https://github.com/Coyls" target="_blank">
+          <Link href={SiteConfig.links.github} target="_blank">
             <Button variant="link" className="p-0 text-sm">
               Coyls
             </Button>

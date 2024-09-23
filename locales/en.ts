@@ -3,7 +3,7 @@ export default {
     available: "AVAILABLE FOR",
   },
   hero: {
-    subtitle: "Freelance Web Developer",
+    subtitle: "Freelance Front‑End Developer",
   },
   about: {
     description:
@@ -23,7 +23,7 @@ export default {
     },
     ktk: {
       description:
-        "Web application for a school project. Goal: visualize data on a map. We compared economic factors (GDP/Sports Budget) with Olympic results.",
+        "Web application for a school project. Goal: visualize data on a map. I handled the server, the database, and the charts.",
     },
     wake: {
       description:
@@ -40,4 +40,5 @@ export default {
       },
     },
   },
+  ["not-responsive"]: "⚠️ This site isn't responsive.",
 } as const;

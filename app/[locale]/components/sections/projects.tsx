@@ -47,6 +47,7 @@ export const Projects: React.FC = async () => {
           technologies={[SiNextdotjs, SiTailwindcss]}
           link="https://workshop-dataviz.vercel.app/"
           githubLink="https://github.com/Coyls/workshop-dataviz"
+          responsive={false}
         />
 
         <Project
@@ -60,6 +61,7 @@ export const Projects: React.FC = async () => {
           technologies={[SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
           link="http://vps-080d9e1e.vps.ovh.net:3100/"
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
+          responsive={false}
         />
 
         <div className="rounded-lg bg-primary/5 p-4 text-center text-sm md:col-span-5 md:p-8">

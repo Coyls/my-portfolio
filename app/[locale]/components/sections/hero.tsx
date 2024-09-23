@@ -1,7 +1,7 @@
 import { getScopedI18n } from "@/locales/server";
 import Image from "next/image";
 import { ButtonGithub } from "../socials/button-github";
-import { ButtonGmail } from "../socials/button-gmail";
+import { ButtonMail } from "../socials/button-gmail";
 import { ButtonLinkedin } from "../socials/button-linkedin";
 import { Section } from "../utils/section";
 
@@ -22,7 +22,7 @@ export const Hero: React.FC = async () => {
           <div className="flex flex-row justify-center gap-4 md:justify-start">
             <ButtonGithub />
             <ButtonLinkedin />
-            <ButtonGmail />
+            <ButtonMail />
           </div>
         </div>
       </div>

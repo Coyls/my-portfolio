@@ -1,12 +1,13 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { SiteConfig } from "@/site-config";
 import { SiGmail } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
-export const ButtonGmail: React.FC = async () => {
+export const ButtonMail: React.FC = async () => {
   return (
     <Link
-      href="mailto:loic.grecofr@gmail.com"
+      href={`mailto:${SiteConfig.contactEmail}`}
       target="_blank"
       className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >

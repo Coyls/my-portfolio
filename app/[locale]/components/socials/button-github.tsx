@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { SiteConfig } from "@/site-config";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
@@ -14,7 +15,7 @@ export const ButtonGithub: React.FC<ButtonGithubProps> = async ({
 }) => {
   return (
     <Link
-      href={href ?? "https://github.com/Coyls"}
+      href={href ?? SiteConfig.links.github}
       target="_blank"
       className={cn(
         buttonVariants({ variant: "ghost", size: "icon" }),

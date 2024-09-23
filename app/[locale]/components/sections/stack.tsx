@@ -65,9 +65,7 @@ const stack = [
 export const Stack: React.FC = async () => {
   return (
     <Section className="flex flex-col md:gap-8">
-      <h2>
-        <span className="hidden md:inline">favorite</span> technologies.
-      </h2>
+      <h2>favorite technologies.</h2>
       <div className="grid-col-1 grid justify-center md:grid-cols-3">
         {stack.map(({ name, skills }, id, array) => {
           const isLast = id === array.length - 1;

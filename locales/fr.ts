@@ -3,7 +3,7 @@ export default {
     available: "DISPONIBLE POUR",
   },
   hero: {
-    subtitle: "Développeur Web Freelance",
+    subtitle: "Freelance Front‑End Developer",
   },
   about: {
     description:
@@ -24,15 +24,15 @@ export default {
     },
     ktk: {
       description:
-        "Application web pour un projet d'école. Objectif : visualiser des données sur une carte. Nous avons mis en parallèle des facteurs économiques (PIB/Budget Sportif) avec les résultats aux JO.",
+        "Application web pour un projet scolaire. Objectif : visualiser des données sur une carte. Je me suis occupé du serveur, de la base de données et des graphiques.",
     },
     wake: {
       description:
-        "Landing page pour un projet d'école. J'ai conçu le site du design au développement et utilisé GSAP pour la plupart des animations.",
+        "Landing page pour un projet scolaire. J'ai conçu le site du design au développement et utilisé GSAP pour la plupart des animations.",
     },
     siah: {
       description:
-        "Projet réalisé en une semaine pour un projet d'école. Je me suis occupé de la plupart des animations du site et créé la logique Flip-book pour les animations au scroll.",
+        "Projet réalisé en une semaine pour un projet scolaire. Je me suis occupé de la plupart des animations du site et créé la logique Flip-book pour les animations au scroll.",
     },
     more: {
       description: {
@@ -41,4 +41,5 @@ export default {
       },
     },
   },
+  ["not-responsive"]: "⚠️ Ce site n'est pas responsive.",
 } as const;

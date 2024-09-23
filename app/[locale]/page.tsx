@@ -1,18 +1,19 @@
-import { About } from "./components/sections/about";
-import { Experiences } from "./components/sections/experiences";
-import { Footer } from "./components/sections/footer";
-import { Header } from "./components/sections/header";
-import { Hero } from "./components/sections/hero";
-import { Projects } from "./components/sections/projects";
-import { Stack } from "./components/sections/stack";
-import { Divider } from "./components/utils/divider";
-import { Spacer } from "./components/utils/spacer";
+import {
+  About,
+  Experiences,
+  Footer,
+  Header,
+  Hero,
+  Projects,
+  Stack,
+} from "./components/sections";
+import { Divider, Spacer } from "./components/utils";
 
 export default async function Home() {
   return (
     <main>
       <Header />
-      <Spacer size="lg" />
+      <Spacer className="h-16 lg:h-32" />
       <Hero />
       <Spacer size="lg" />
       <About />

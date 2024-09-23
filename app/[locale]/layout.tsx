@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { SiteConfig } from "@/site-config";
 import type { Metadata } from "next";
 import { Poppins, Questrial } from "next/font/google";
 import "./globals.css";
@@ -17,8 +18,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Loïc Greco",
-  description: "Freelance web developer based in Lyon, France",
+  title: SiteConfig.title,
+  description: SiteConfig.description,
+  metadataBase: new URL(SiteConfig.prodUrl),
 };
 
 export default function RootLayout({

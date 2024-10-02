@@ -6,20 +6,23 @@ export default {
     subtitle: "Freelance Front‑End Developer",
   },
   about: {
-    description:
-      "I am a passionate web developer with skills in both front-end and back-end. I enjoy learning new skills and exploring technologies to keep improving. I love working on meaningful projects. My motto: keep it simple!",
+    description: {
+      me: 'I am a versatile web developer with skills in both front-end and back-end. Always eager to learn, I enjoy acquiring new skills and exploring technologies to keep improving. Working on meaningful projects is a true source of motivation for me. My motto: "keep it simple!"',
+      stack:
+        "I mainly focus on Next.js and the surrounding technologies. I also have experience with NestJS and Prisma, as well as some knowledge of Python. I am also open to using other technologies depending on the project's needs.",
+    },
   },
   experiences: {
     prismo: {
       career: "Full Stack Developer",
-      status: "Intern",
+      status: "Alternant",
       description: "Development of the company's various web applications.",
     },
   },
   projects: {
     septem: {
       description:
-        "Web application to count points and get statistics for the board game Seven Wonders. Goal: create a useful SaaS and improve my stack.",
+        "Web application to count points and get statistics for the board game 7 Wonders. Goal: create a useful application and improve my stack.",
     },
     ktk: {
       description:

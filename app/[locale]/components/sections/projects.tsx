@@ -9,6 +9,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
+  SiResend,
   SiTailwindcss,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
@@ -24,11 +25,16 @@ export const Projects: React.FC = async () => {
       <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-5 md:px-8">
         <Project
           className="md:col-span-3"
-          name="Septem"
+          name="Septm"
           description={t("septem.description")}
-          technologies={[SiNextdotjs, SiTailwindcss, SiPrisma, SiPostgresql]}
-          // todo: ajouter le lien
-          link="https://github.com/Coyls"
+          technologies={[
+            SiNextdotjs,
+            SiTailwindcss,
+            SiPrisma,
+            SiPostgresql,
+            SiResend,
+          ]}
+          link="https://septm.app"
         />
 
         <Project

@@ -6,8 +6,11 @@ export default {
     subtitle: "Freelance Front‑End Developer",
   },
   about: {
-    description:
-      "Je suis un développeur web passionné, avec des compétences en front-end et back-end. J'aime apprendre de nouvelles compétences et explorer des technologies pour continuer à m'améliorer. J'aime travailler sur des projets qui ont du sens. Ma devise : keep it simple !",
+    description: {
+      me: "Je suis un développeur web polyvalent, spécialisé en front-end et back-end. Toujours curieux d'apprendre, j'aime acquérir de nouvelles compétences et explorer les technologies pour continuer à progresser. Travailler sur des projets porteurs de sens est une véritable source de motivation pour moi. Ma devise : \"keep it simple !\"",
+      stack:
+        "Je me concentre principalement sur Next.js et les technologies qui gravitent autour. J'ai également de l'expérience avec NestJS et Prisma, ainsi qu'une bonne maîtrise de Python. Je reste également ouvert à l’utilisation d’autres technologies selon les besoins du projet.",
+    },
   },
   experiences: {
     prismo: {
@@ -20,7 +23,7 @@ export default {
   projects: {
     septem: {
       description:
-        "Application web pour compter les points et obtenir des statistiques de ses parties du jeu de société Seven Wonders. Objectif : créer un SaaS utile et progresser sur ma stack.",
+        "Application web pour compter les points et obtenir des statistiques de ses parties du jeu de société 7 Wonders. Objectif : créer une application utile et progresser sur ma stack.",
     },
     ktk: {
       description:

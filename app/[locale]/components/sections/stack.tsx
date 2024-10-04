@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import {
-  SiDocker,
   SiNextdotjs,
-  SiPostgresql,
   SiPrisma,
   SiPython,
   SiReact,
@@ -49,14 +47,6 @@ const stack = [
       {
         name: "Prisma",
         icon: <SiPrisma className="size-10" />,
-      },
-      {
-        name: "PostgreSQL",
-        icon: <SiPostgresql className="size-10" />,
-      },
-      {
-        name: "Docker",
-        icon: <SiDocker className="size-10" />,
       },
     ],
   },

@@ -63,12 +63,11 @@ const config: Config = {
       fontSize: {
         sm: "0.750rem", // description
         base: "1rem", // p
-        xl: "1.333rem", // h6
-        "2xl": "1.777rem", // h5
-        "3xl": "2.369rem", // h4
-        "4xl": "3.158rem", // h3
-        "5xl": "4.210rem", // h2
-        "6xl": "5.611rem", // h1
+        xl: "1.333rem", // h4
+        "2xl": "1.777rem", // h3
+        "3xl": "2.369rem", // h2
+        "4xl": "3.158rem", // h1
+        "5xl": "4.210rem", // h1
       },
     },
   },

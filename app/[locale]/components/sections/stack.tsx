@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import {
   SiNextdotjs,
   SiPrisma,
-  SiPython,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -12,20 +11,20 @@ import { Skill } from "../utils/skill";
 
 const stack = [
   {
-    name: "languages",
+    name: "language",
     skills: [
       {
         name: "Typescript",
         icon: <SiTypescript className="size-10" />,
       },
-      {
+      /* {
         name: "Python",
         icon: <SiPython className="size-10" />,
-      },
+      }, */
     ],
   },
   {
-    name: "front-end",
+    name: "frontend",
     skills: [
       {
         name: "React",
@@ -38,7 +37,7 @@ const stack = [
     ],
   },
   {
-    name: "back-end",
+    name: "backend",
     skills: [
       {
         name: "Next.js",
@@ -55,7 +54,7 @@ const stack = [
 export const Stack: React.FC = async () => {
   return (
     <Section className="flex flex-col md:gap-8">
-      <h2>favorite technologies.</h2>
+      <h2 className="leading-none">favorite technologies.</h2>
       <div className="grid-col-1 grid justify-center md:grid-cols-3">
         {stack.map(({ name, skills }, id, array) => {
           const isLast = id === array.length - 1;
@@ -70,7 +69,7 @@ export const Stack: React.FC = async () => {
               )}
             >
               <h3>{name}</h3>
-              <div className="my-auto grid grid-cols-2 gap-4">
+              <div className="my-auto flex flex-row gap-4">
                 {skills.map(({ name, icon }) => (
                   <Skill key={name}>{icon}</Skill>
                 ))}

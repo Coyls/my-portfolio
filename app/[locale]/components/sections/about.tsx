@@ -6,9 +6,26 @@ export const About: React.FC = async () => {
 
   return (
     <Section className="flex flex-col gap-8">
-      <h2>about.</h2>
-      <p className="px-4 text-justify md:px-8">{t("description.me")}</p>
-      <p className="px-4 text-justify md:px-8">{t("description.stack")}</p>
+      <h2 id="about">about.</h2>
+      <article className="flex flex-col gap-6 px-0 md:px-8">
+        <p>{t("intro")}</p>
+        <h3 className="font-caption leading-none">{t("missionsTitle")}</h3>
+        <p>
+          <span className="font-bold">{t("domainTitle")}</span>
+          {t("missions")}
+        </p>
+        <h3 className="font-caption leading-none">{t("sectorsTitle")}</h3>
+        <p>
+          <span className="font-bold">{t("sectors.saasTitle")}</span>
+          {t("sectors.saas")}
+        </p>
+        <p>
+          <span className="font-bold">{t("sectors.startupsTitle")}</span>
+          {t("sectors.startups")}
+        </p>
+        <h3 className="font-caption leading-none">{t("backendSkillsTitle")}</h3>
+        <p>{t("backendSkills")}</p>
+      </article>
     </Section>
   );
 };

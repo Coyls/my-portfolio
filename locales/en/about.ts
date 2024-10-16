@@ -1,9 +1,20 @@
 export default {
   about: {
-    description: {
-      me: 'I am a web developer specialized in front-end. Always eager to learn, I enjoy acquiring new skills and exploring technologies to keep improving. Working on meaningful projects is a true source of motivation for me. My motto: "keep it simple!"',
-      stack:
-        "I mainly focus on Next.js and the surrounding technologies. I also have experience with NestJS and Prisma, as well as some knowledge of Python. I am also open to using other technologies depending on the project's needs.",
+    intro:
+      "I am open to freelance missions as a Frontend developer, specializing in Typescript, Next.js, and React.",
+    missionsTitle: "missions sought:",
+    domainTitle: "Frontend Development",
+    missions:
+      ": I have a strong command of Typescript, Next.js, and React technologies, which I use to create high-performance web applications. I work on projects involving creation, redesign, or feature addition.",
+    sectorsTitle: "targeted sectors:",
+    sectors: {
+      saasTitle: "B2B SaaS",
+      saas: ": Experience in HR-oriented SaaS, with an interest in other sectors offering innovative SaaS solutions.",
+      startupsTitle: "Startups",
+      startups: ": Preference for small-sized environments.",
     },
+    backendSkillsTitle: "backend skills (as a complement):",
+    backendSkills:
+      "Foundations in NestJS, REST API, GraphQL, and Prisma, allowing me to collaborate effectively on complete projects.",
   },
 } as const;

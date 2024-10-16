@@ -1,5 +1,5 @@
 export default {
   hero: {
-    subtitle: "Freelance Front‑End Developer",
+    subtitle: "Freelance Frontend Developer",
   },
 } as const;

@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import {
   SiNextdotjs,
   SiPrisma,
+  SiPython,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -11,16 +12,16 @@ import { Skill } from "../utils/skill";
 
 const stack = [
   {
-    name: "language",
+    name: "languages",
     skills: [
       {
         name: "Typescript",
         icon: <SiTypescript className="size-10" />,
       },
-      /* {
+      {
         name: "Python",
         icon: <SiPython className="size-10" />,
-      }, */
+      },
     ],
   },
   {

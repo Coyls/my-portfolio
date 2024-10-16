@@ -1,6 +1,6 @@
 export const SiteConfig = {
   title: "Loïc Greco",
-  description: "Freelance Front-End Developer based in Lyon, France",
+  description: "Freelance FrontEnd Developer based in Lyon, France",
   primary: "#FFAC4D",
   prodUrl: "https://loic-greco.fr",
   contactEmail: "loic.grecofr@gmail.com",

@@ -11,6 +11,7 @@ import {
   SiPrisma,
   SiResend,
   SiTailwindcss,
+  SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import { Project } from "../utils/project";
@@ -22,12 +23,13 @@ export const Projects: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>projects.</h2>
-      <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-5 md:px-8">
+      <div className="grid grid-cols-1 gap-4 px-0 md:grid-cols-5 md:px-8">
         <Project
           className="md:col-span-3"
           name="Septm"
           description={t("septem.description")}
           technologies={[
+            SiTypescript,
             SiNextdotjs,
             SiTailwindcss,
             SiPrisma,
@@ -41,7 +43,7 @@ export const Projects: React.FC = async () => {
           className="md:col-span-2"
           name="Wake"
           description={t("wake.description")}
-          technologies={[SiNextdotjs, SiTailwindcss, SiGreensock]}
+          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiGreensock]}
           link="https://wake-coyls.vercel.app"
           githubLink="https://github.com/Coyls/wake"
         />
@@ -50,7 +52,7 @@ export const Projects: React.FC = async () => {
           className="md:col-span-2"
           name="Siah"
           description={t("siah.description")}
-          technologies={[SiNextdotjs, SiTailwindcss]}
+          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss]}
           link="https://workshop-dataviz.vercel.app/"
           githubLink="https://github.com/Coyls/workshop-dataviz"
           responsive={false}
@@ -58,13 +60,9 @@ export const Projects: React.FC = async () => {
 
         <Project
           className="md:col-span-3"
-          name={
-            <>
-              KTK<span className="hidden md:inline">{" | Back-end"}</span>
-            </>
-          }
+          name={"KTK | Backend"}
           description={t("ktk.description")}
-          technologies={[SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
+          technologies={[SiTypescript, SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
           link="http://vps-080d9e1e.vps.ovh.net:3100/"
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
           responsive={false}

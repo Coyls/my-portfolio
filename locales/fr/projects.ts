@@ -1,25 +1,4 @@
 export default {
-  header: {
-    available: "DISPONIBLE POUR",
-  },
-  hero: {
-    subtitle: "Freelance Front‑End Developer",
-  },
-  about: {
-    description: {
-      me: "Je suis un développeur web spécialisé en front-end. Toujours curieux d'apprendre, j'aime acquérir de nouvelles compétences et explorer les technologies pour continuer à progresser. Travailler sur des projets porteurs de sens est une véritable source de motivation pour moi. Ma devise : \"keep it simple !\"",
-      stack:
-        "Je me concentre principalement sur Next.js et les technologies qui gravitent autour. J'ai également de l'expérience avec NestJS et Prisma, ainsi qu'une bonne maîtrise de Python. Je reste également ouvert à l’utilisation d’autres technologies selon les besoins du projet.",
-    },
-  },
-  experiences: {
-    prismo: {
-      career: "Développeur Full Stack",
-      status: "alternant",
-      description:
-        "Développement des différentes applications web de l’entreprise.",
-    },
-  },
   projects: {
     septem: {
       description:
@@ -44,5 +23,4 @@ export default {
       },
     },
   },
-  ["not-responsive"]: "⚠️ Ce site n'est pas responsive.",
 } as const;

@@ -1,9 +1,9 @@
-import header from "./header";
-import hero from "./hero";
 import about from "./about";
 import experiences from "./experiences";
-import projects from "./projects";
+import header from "./header";
+import hero from "./hero";
 import notResponsive from "./not-responsive";
+import projects from "./projects";
 
 export default {
   ...header,

@@ -6,7 +6,7 @@ export const About: React.FC = async () => {
 
   return (
     <Section className="flex flex-col gap-8">
-      <h2>about.</h2>
+      <h2 id="about">about.</h2>
       <article className="flex flex-col gap-6 px-0 md:px-8">
         <p>{t("intro")}</p>
         <h3 className="font-caption leading-none">{t("missionsTitle")}</h3>

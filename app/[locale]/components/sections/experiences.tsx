@@ -8,7 +8,6 @@ import {
   SiPrisma,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Section } from "../utils/section";
 
@@ -35,61 +34,41 @@ export const Experiences: React.FC = async () => {
         </div>
 
         <article className="flex flex-col gap-4 text-sm md:text-base">
-          <h4 className="font-bold">Frontend</h4>
-
-          <ul className="list-inside">
+          <h4 className="font-bold">{t("frontend.title")}</h4>
+          <ul className="flex list-inside flex-col gap-2">
             <li>
-              <span className="font-bold">Développement de feature</span> dans
-              une <span className="font-bold">Multi-Tenant SaaS</span>
+              <span className="font-bold">{t("frontend.features")}</span>
               <ul className="list-inside list-disc px-4">
                 <li>
-                  <span className="font-bold">Angular</span> et{" "}
+                  <span className="font-bold">Angular</span> /{" "}
                   <span className="font-bold">Next.js</span>
                 </li>
               </ul>
             </li>
             <li>
-              <span className="font-bold">
-                Intégration Frontend Complete de Aura
-              </span>{" "}
-              (2 fois)
+              <span className="font-bold">{t("frontend.integration")}</span>
               <ul className="list-inside list-disc px-4">
-                <li>
-                  Migration <span className="font-bold">Angular</span>{" "}
-                  <ArrowRight className="inline-block size-4" />{" "}
-                  <span className="font-bold">Next.js</span>
-                </li>
-                <li>
-                  Migration Lib UI Ant Design/Tailwind{" "}
-                  <ArrowRight className="inline-block size-4" /> MUI
-                </li>
+                <li>{t("frontend.migrations.migration1")}</li>
+                <li>{t("frontend.migrations.migration2")}</li>
               </ul>
             </li>
             <li>
-              Développement de{" "}
-              <span className="font-bold">Formulaire Complexe</span>
+              {t("frontend.complexForms")}
               <ul className="list-inside list-disc px-4">
-                <li>Multi-step</li>
-                <li>Gamifié</li>
+                <li>{t("frontend.complexFormsDetails.detail1")}</li>
+                <li>{t("frontend.complexFormsDetails.detail2")}</li>
               </ul>
             </li>
-            <li>Intégration de Graphique et Data visualisation</li>
-            <li>Internationalisation</li>
+            <li>{t("frontend.graphics")}</li>
+            <li>{t("frontend.internationalization")}</li>
           </ul>
-          <h4 className="font-bold">Backend</h4>
-          <ul className="list-inside">
-            <li>
-              Création de resolver <span className="font-bold">GraphQL</span>
-            </li>
-            <li>
-              Création d&apos;un outils de{" "}
-              <span className="font-bold">génération de PDF</span> en Backend
-              avec donnée dynamique : CV Prismo
-            </li>
-            <li>
-              Création de schemas <span className="font-bold">Prisma</span>
-            </li>
+          <h4 className="font-bold">{t("backend.title")}</h4>
+          <ul className="flex list-inside flex-col gap-2">
+            <li>{t("backend.graphql")}</li>
+            <li>{t("backend.pdfTool")}</li>
+            <li>{t("backend.prismaSchemas")}</li>
           </ul>
+          {/* ---------------------------- */}
           <p>
             <Link
               href="https://app.prismo.io/fr/profil/loic-greco/accueil"

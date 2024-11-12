@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 import {
+  SiNestjs,
   SiNextdotjs,
-  SiPrisma,
   SiPython,
   SiReact,
-  SiTailwindcss,
+  SiShadcnui,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import { Section } from "../utils/section";
@@ -32,8 +32,8 @@ const stack = [
         icon: <SiReact className="size-10" />,
       },
       {
-        name: "TailwindCSS",
-        icon: <SiTailwindcss className="size-10" />,
+        name: "ShadcnUI",
+        icon: <SiShadcnui className="size-10" />,
       },
     ],
   },
@@ -45,8 +45,8 @@ const stack = [
         icon: <SiNextdotjs className="size-10" />,
       },
       {
-        name: "Prisma",
-        icon: <SiPrisma className="size-10" />,
+        name: "NestJS",
+        icon: <SiNestjs className="size-10" />,
       },
     ],
   },

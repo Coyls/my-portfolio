@@ -86,6 +86,12 @@
   h5 {
     @apply font-caption text-lg;
   }
+
+  .mdx-container {
+    ul {
+      @apply list-disc list-inside;
+    }
+  }
 }
 
 @layer utilities {

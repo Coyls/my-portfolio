@@ -27,7 +27,7 @@ export const Hero: React.FC = async () => {
       <div className="flex-[1]">
         <div className="relative size-48 md:size-64">
           <Image
-            className="rounded-full"
+            className="rounded-xl"
             fill
             src="/me.png"
             alt="Picture of Loïc Greco"

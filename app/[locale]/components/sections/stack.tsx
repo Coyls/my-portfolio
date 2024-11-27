@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import {
+  SiGo,
   SiNestjs,
   SiNextdotjs,
-  SiPython,
   SiReact,
   SiShadcnui,
   SiTypescript,
@@ -19,8 +19,8 @@ const stack = [
         icon: <SiTypescript className="size-10" />,
       },
       {
-        name: "Python",
-        icon: <SiPython className="size-10" />,
+        name: "Go",
+        icon: <SiGo className="size-10" />,
       },
     ],
   },

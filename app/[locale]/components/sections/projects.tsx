@@ -63,9 +63,8 @@ export const Projects: React.FC = async () => {
           name={"KTK | Backend"}
           description={t("ktk.description")}
           technologies={[SiTypescript, SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
-          link="http://vps-080d9e1e.vps.ovh.net:3100/"
+          link="https://github.com/Coyls/ktk-dataviz-backend"
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
-          responsive={false}
         />
 
         <div className="rounded-lg bg-primary/5 p-4 text-center text-sm md:col-span-5 md:p-8">

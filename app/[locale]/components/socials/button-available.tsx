@@ -5,6 +5,10 @@ import Link from "next/link";
 export const ButtonAvailable: React.FC = async () => {
   const t = await getScopedI18n("header");
 
+  if (!SiteConfig.disponibility) {
+    return null;
+  }
+
   return (
     <div>
       <p>{t("available")}</p>

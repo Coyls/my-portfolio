@@ -1,6 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
+import { SiteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils";
-import { SiteConfig } from "@/site-config";
 import type { Metadata } from "next";
 import { Poppins, Questrial } from "next/font/google";
 import "./globals.css";

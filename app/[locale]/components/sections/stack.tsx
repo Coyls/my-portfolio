@@ -1,63 +1,14 @@
 import { cn } from "@/lib/utils";
-import {
-  SiGo,
-  SiNestjs,
-  SiNextdotjs,
-  SiReact,
-  SiShadcnui,
-  SiTypescript,
-} from "@icons-pack/react-simple-icons";
+import { StackConfig } from "@/config/stack.config";
 import { Section } from "../utils/section";
 import { Skill } from "../utils/skill";
-
-const stack = [
-  {
-    name: "languages",
-    skills: [
-      {
-        name: "Typescript",
-        icon: <SiTypescript className="size-10" />,
-      },
-      {
-        name: "Go",
-        icon: <SiGo className="size-10" />,
-      },
-    ],
-  },
-  {
-    name: "frontend",
-    skills: [
-      {
-        name: "React",
-        icon: <SiReact className="size-10" />,
-      },
-      {
-        name: "ShadcnUI",
-        icon: <SiShadcnui className="size-10" />,
-      },
-    ],
-  },
-  {
-    name: "backend",
-    skills: [
-      {
-        name: "Next.js",
-        icon: <SiNextdotjs className="size-10" />,
-      },
-      {
-        name: "NestJS",
-        icon: <SiNestjs className="size-10" />,
-      },
-    ],
-  },
-];
 
 export const Stack: React.FC = async () => {
   return (
     <Section className="flex flex-col md:gap-8">
       <h2 className="leading-none">favorite technologies.</h2>
       <div className="grid-col-1 grid justify-center md:grid-cols-3">
-        {stack.map(({ name, skills }, id, array) => {
+        {StackConfig.map(({ name, skills }, id, array) => {
           const isLast = id === array.length - 1;
 
           return (

@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { IconType } from "@icons-pack/react-simple-icons";
+import type { IconType } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
-import React from "react";
+import type React from "react";
 import { ButtonGithub } from "../socials/button-github";
 import { ButtonNotResponsive } from "./button-not-responsive";
 
@@ -48,7 +48,12 @@ export const Project: React.FC<ProjectProps> = async ({
         <p className="max-w-lg text-justify text-sm">{description}</p>
         <div className="flex flex-row gap-4">
           {technologies.map((Icon, index) => (
-            <Icon key={`${name}-${index}-icon`} />
+            <Icon
+              key={`${name}-${
+                // biome-ignore lint/suspicious/noArrayIndexKey: Used in paralel with name !
+                index
+              }-icon`}
+            />
           ))}
         </div>
       </div>

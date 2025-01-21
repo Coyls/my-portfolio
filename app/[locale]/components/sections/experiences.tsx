@@ -2,10 +2,12 @@ import { Button } from "@/components/ui/button";
 import { getScopedI18n } from "@/locales/server";
 import {
   SiAngular,
+  SiDocker,
   SiGraphql,
   SiNestjs,
   SiNextdotjs,
   SiPrisma,
+  SiReact,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
@@ -107,11 +109,13 @@ export const Experiences: React.FC = async () => {
 
         <div className="flex flex-row gap-4">
           <SiTypescript />
+          <SiReact />
           <SiNextdotjs />
           <SiAngular />
           <SiNestjs />
-          <SiPrisma />
           <SiGraphql />
+          <SiPrisma />
+          <SiDocker />
         </div>
       </div>
     </Section>

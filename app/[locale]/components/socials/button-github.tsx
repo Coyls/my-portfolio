@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
+import { SiteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils";
-import { SiteConfig } from "@/site-config";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 

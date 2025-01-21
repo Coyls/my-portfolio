@@ -1,5 +1,5 @@
+import { SiteConfig } from "@/config/site.config";
 import { getScopedI18n } from "@/locales/server";
-import { SiteConfig } from "@/site-config";
 import Link from "next/link";
 
 export const ButtonAvailable: React.FC = async () => {

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { SiteConfig } from "@/site-config";
+import { SiteConfig } from "@/config/site.config";
 import Link from "next/link";
 import { LocaleSwitch } from "../utils/locale-switch";
 import { Section } from "../utils/section";

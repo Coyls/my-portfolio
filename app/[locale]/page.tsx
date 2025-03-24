@@ -2,13 +2,13 @@ import {
   About,
   Experiences,
   Footer,
+  Formations,
   Header,
   Hero,
   Projects,
   Stack,
 } from "./components/sections";
-import { Divider, Spacer } from "./components/utils";
-import { SpacerArrow } from "./components/utils/spacer-arrow";
+import { Divider, Spacer, SpacerArrow } from "./components/utils";
 
 export default async function Home() {
   return (
@@ -23,6 +23,8 @@ export default async function Home() {
       <Projects />
       <Spacer size="md" />
       <Experiences />
+      <Spacer size="md" />
+      <Formations />
       <Spacer size="md" />
       <Stack />
       <Spacer size="md" />

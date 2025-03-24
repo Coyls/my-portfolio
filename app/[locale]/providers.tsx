@@ -11,8 +11,7 @@ export const Providers = (
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
+      defaultTheme="dark"
       disableTransitionOnChange
     >
       <I18nProviderClient locale={locale}>

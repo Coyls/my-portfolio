@@ -1,6 +1,7 @@
 import {
-  SiGraphql,
+  SiDocker,
   SiNextdotjs,
+  SiPython,
   SiReact,
   SiShadcnui,
   SiTypescript,
@@ -13,6 +14,10 @@ export const StackConfig = [
       {
         name: "Typescript",
         icon: <SiTypescript className="size-10" />,
+      },
+      {
+        name: "Python",
+        icon: <SiPython className="size-10" />,
       },
     ],
   },
@@ -37,8 +42,8 @@ export const StackConfig = [
         icon: <SiNextdotjs className="size-10" />,
       },
       {
-        name: "GraphQL",
-        icon: <SiGraphql className="size-10" />,
+        name: "Docker",
+        icon: <SiDocker className="size-10" />,
       },
     ],
   },

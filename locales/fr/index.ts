@@ -1,5 +1,6 @@
 import about from "./about";
 import experiences from "./experiences";
+import formations from "./formations";
 import header from "./header";
 import hero from "./hero";
 import notResponsive from "./not-responsive";
@@ -12,4 +13,5 @@ export default {
   ...experiences,
   ...projects,
   ...notResponsive,
+  ...formations,
 } as const;

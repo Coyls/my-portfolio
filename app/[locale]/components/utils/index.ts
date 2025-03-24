@@ -5,4 +5,5 @@ export * from "./project";
 export * from "./section";
 export * from "./skill";
 export * from "./spacer";
+export * from "./spacer-arrow";
 export * from "./theme-switch";

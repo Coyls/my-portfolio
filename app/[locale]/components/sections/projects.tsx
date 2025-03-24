@@ -54,7 +54,7 @@ export const Projects: React.FC = async () => {
           description={t("siah.description")}
           technologies={[SiTypescript, SiNextdotjs, SiTailwindcss]}
           link="https://workshop-dataviz.vercel.app/"
-          githubLink="https://github.com/Coyls/workshop-dataviz"
+          githubLink="https://github.com/Coyls/siah"
           responsive={false}
         />
 

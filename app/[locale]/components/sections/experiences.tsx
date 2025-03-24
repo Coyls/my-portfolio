@@ -19,7 +19,7 @@ export const Experiences: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>experiences.</h2>
-      <div className="flex flex-col gap-4 px-0 md:px-8">
+      <div className="flex flex-col gap-6 px-0 md:px-8">
         <div className="flex flex-col justify-between md:flex-row">
           <div>
             <Link href="https://prismo.io/" target="_blank">
@@ -40,7 +40,7 @@ export const Experiences: React.FC = async () => {
           <ul className="flex list-inside flex-col gap-2">
             <li>
               <span className="font-bold">{t("frontend.features")}</span>
-              <ul className="list-inside list-disc px-4">
+              <ul className="list-inside px-4">
                 <li>
                   <span className="font-bold">Angular</span> /{" "}
                   <span className="font-bold">Next.js</span>
@@ -49,14 +49,14 @@ export const Experiences: React.FC = async () => {
             </li>
             <li>
               <span className="font-bold">{t("frontend.integration")}</span>
-              <ul className="list-inside list-disc px-4">
+              <ul className="list-inside px-4">
                 <li>{t("frontend.migrations.migration1")}</li>
                 <li>{t("frontend.migrations.migration2")}</li>
               </ul>
             </li>
             <li>
               {t("frontend.complexForms")}
-              <ul className="list-inside list-disc px-4">
+              <ul className="list-inside px-4">
                 <li>{t("frontend.complexFormsDetails.detail1")}</li>
                 <li>{t("frontend.complexFormsDetails.detail2")}</li>
               </ul>
@@ -65,7 +65,7 @@ export const Experiences: React.FC = async () => {
             <li>{t("frontend.internationalization")}</li>
           </ul>
           <h4 className="font-bold">{t("backend.title")}</h4>
-          <ul className="flex list-inside flex-col gap-2">
+          <ul className="flex list-inside flex-col">
             <li>{t("backend.graphql")}</li>
             <li>{t("backend.pdfTool")}</li>
             <li>{t("backend.prismaSchemas")}</li>

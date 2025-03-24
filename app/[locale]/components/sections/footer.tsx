@@ -8,7 +8,7 @@ import ThemeSwitch from "../utils/theme-switch";
 export const Footer: React.FC = async () => {
   return (
     <Section>
-      <footer className="flex flex-col items-center justify-center py-4">
+      <footer className="flex flex-row items-center justify-around py-4">
         <p className="text-center text-sm">
           <span>Made by </span>
           <Link href={SiteConfig.links.github} target="_blank">

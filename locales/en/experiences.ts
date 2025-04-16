@@ -1,31 +1,28 @@
 export default {
   experiences: {
+    freelance: {
+      career: "Full Stack Developer",
+    },
     prismo: {
       career: "Full Stack Developer",
       status: "Alternant",
       description: "Development of the company's various web applications.",
       frontend: {
         title: "Frontend",
-        features: "Feature development in a Multi-Tenant SaaS",
-        integration: "Complete Frontend Integration of Aura (2 times)",
-        migrations: {
-          migration1: "Migration Angular to Next.js",
-          migration2: "Migration Lib UI Ant Design/Tailwind to MUI",
-        },
-        complexForms: "Development of Complex Forms",
-        complexFormsDetails: {
-          detail1: "Multi-step",
-          detail2: "Gamified",
-        },
-        graphics: "Integration of Charts and Data Visualization",
-        internationalization: "Internationalization",
+        features:
+          "- Feature development for a multi-tenant SaaS application (Angular / Next.js)",
+        integration:
+          "- UI integration with Next.js, Angular, Tailwind, Ant Design, and MUI",
+        forms: "- Design of complex forms: multi-step, gamified",
+        graphics: "- Implementation of charts and data visualizations",
+        internationalization: "- Implementation of internationalization (i18n)",
       },
       backend: {
         title: "Backend",
-        graphql: "Creation of GraphQL resolvers",
+        graphql: "- Development of GraphQL resolvers",
         pdfTool:
-          "Creation of a PDF generation tool in Backend with dynamic data: CV Prismo",
-        prismaSchemas: "Creation of Prisma schemas",
+          "- Built a backend tool for dynamic PDF generation (CV Prismo)",
+        prismaSchemas: "- Design and implementation of Prisma schemas",
       },
     },
   },

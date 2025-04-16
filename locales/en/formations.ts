@@ -3,5 +3,8 @@ export default {
     gobelins: {
       title: "Web and Mobile Developer Bachelor's Degree",
     },
+    bootdev: {
+      title: "Backend Developer Online Course",
+    },
   },
 } as const;

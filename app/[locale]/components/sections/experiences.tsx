@@ -36,10 +36,10 @@ export const Experiences: React.FC = async () => {
         </div>
 
         <article className="flex flex-col gap-4 text-sm md:text-base">
-          <h4 className="font-bold">{t("frontend.title")}</h4>
+          <h4 className="font-bold">{t("prismo.frontend.title")}</h4>
           <ul className="flex list-inside flex-col gap-2">
             <li>
-              <span className="font-bold">{t("frontend.features")}</span>
+              <span className="font-bold">{t("prismo.frontend.features")}</span>
               <ul className="list-inside px-4">
                 <li>
                   <span className="font-bold">Angular</span> /{" "}
@@ -48,27 +48,29 @@ export const Experiences: React.FC = async () => {
               </ul>
             </li>
             <li>
-              <span className="font-bold">{t("frontend.integration")}</span>
+              <span className="font-bold">
+                {t("prismo.frontend.integration")}
+              </span>
               <ul className="list-inside px-4">
-                <li>{t("frontend.migrations.migration1")}</li>
-                <li>{t("frontend.migrations.migration2")}</li>
+                <li>{t("prismo.frontend.migrations.migration1")}</li>
+                <li>{t("prismo.frontend.migrations.migration2")}</li>
               </ul>
             </li>
             <li>
-              {t("frontend.complexForms")}
+              {t("prismo.frontend.complexForms")}
               <ul className="list-inside px-4">
-                <li>{t("frontend.complexFormsDetails.detail1")}</li>
-                <li>{t("frontend.complexFormsDetails.detail2")}</li>
+                <li>{t("prismo.frontend.complexFormsDetails.detail1")}</li>
+                <li>{t("prismo.frontend.complexFormsDetails.detail2")}</li>
               </ul>
             </li>
-            <li>{t("frontend.graphics")}</li>
-            <li>{t("frontend.internationalization")}</li>
+            <li>{t("prismo.frontend.graphics")}</li>
+            <li>{t("prismo.frontend.internationalization")}</li>
           </ul>
-          <h4 className="font-bold">{t("backend.title")}</h4>
+          <h4 className="font-bold">{t("prismo.backend.title")}</h4>
           <ul className="flex list-inside flex-col">
-            <li>{t("backend.graphql")}</li>
-            <li>{t("backend.pdfTool")}</li>
-            <li>{t("backend.prismaSchemas")}</li>
+            <li>{t("prismo.backend.graphql")}</li>
+            <li>{t("prismo.backend.pdfTool")}</li>
+            <li>{t("prismo.backend.prismaSchemas")}</li>
           </ul>
           {/* ---------------------------- */}
           <p>

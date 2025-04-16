@@ -1,7 +1,7 @@
 export default {
   formations: {
     gobelins: {
-      title: "Interactive Developer Bachelor's Degree",
+      title: "Web and Mobile Developer Bachelor's Degree",
     },
   },
 } as const;

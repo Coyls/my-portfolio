@@ -1,22 +1,25 @@
+import { IconQdrant } from "@/components/icons/icon-qdrant";
 import { Button } from "@/components/ui/button";
 import { getScopedI18n } from "@/locales/server";
 import {
   SiD3dotjs,
   SiDocker,
   SiExpress,
+  SiGnubash,
   SiGreensock,
+  SiN8n,
   SiNeo4j,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
   SiResend,
   SiTailwindcss,
+  SiTraefikproxy,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import { Project } from "../utils/project";
 import { Section } from "../utils/section";
-
 export const Projects: React.FC = async () => {
   const t = await getScopedI18n("projects");
 
@@ -26,6 +29,22 @@ export const Projects: React.FC = async () => {
       <div className="grid grid-cols-1 gap-4 px-0 md:grid-cols-5 md:px-8">
         <Project
           className="md:col-span-3"
+          name="My n8n Infrastructure"
+          description={t("n8n-infra.description")}
+          technologies={[
+            SiGnubash,
+            SiDocker,
+            SiTraefikproxy,
+            SiN8n,
+            IconQdrant,
+            SiPostgresql,
+          ]}
+          link="https://github.com/Coyls/n8n-infra"
+          githubLink="https://github.com/Coyls/n8n-infra"
+        />
+
+        <Project
+          className="md:col-span-2"
           name="Septm"
           description={t("septem.description")}
           technologies={[
@@ -46,16 +65,6 @@ export const Projects: React.FC = async () => {
           technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiGreensock]}
           link="https://wake-coyls.vercel.app"
           githubLink="https://github.com/Coyls/wake"
-        />
-
-        <Project
-          className="md:col-span-2"
-          name="Siah"
-          description={t("siah.description")}
-          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss]}
-          link="https://workshop-dataviz.vercel.app/"
-          githubLink="https://github.com/Coyls/siah"
-          responsive={false}
         />
 
         <Project

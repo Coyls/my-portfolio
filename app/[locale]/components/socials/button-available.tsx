@@ -5,7 +5,7 @@ import Link from "next/link";
 export const ButtonAvailable: React.FC = async () => {
   const t = await getScopedI18n("header");
 
-  if (!SiteConfig.disponibility) {
+  if (!SiteConfig.disponibility.isAvailable) {
     return null;
   }
 
@@ -14,7 +14,7 @@ export const ButtonAvailable: React.FC = async () => {
       <p>{t("available")}</p>
       <Link href={`mailto:${SiteConfig.contactEmail}`}>
         <p className="text-primary underline-offset-4 hover:underline">
-          FREELANCE WORK
+          {SiteConfig.disponibility.message}
         </p>
       </Link>
     </div>

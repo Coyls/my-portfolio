@@ -1,7 +1,7 @@
 import {
   SiDocker,
-  SiNextdotjs,
-  SiPython,
+  SiGo,
+  SiNestjs,
   SiReact,
   SiShadcnui,
   SiTypescript,
@@ -16,8 +16,8 @@ export const StackConfig = [
         icon: <SiTypescript className="size-10" />,
       },
       {
-        name: "Python",
-        icon: <SiPython className="size-10" />,
+        name: "Go",
+        icon: <SiGo className="size-10" />,
       },
     ],
   },
@@ -38,9 +38,10 @@ export const StackConfig = [
     name: "backend",
     skills: [
       {
-        name: "Next.js",
-        icon: <SiNextdotjs className="size-10" />,
+        name: "Nest.js",
+        icon: <SiNestjs className="size-10" />,
       },
+
       {
         name: "Docker",
         icon: <SiDocker className="size-10" />,

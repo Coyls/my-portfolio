@@ -4,7 +4,7 @@ export default {
       title: "Bachelor Développeur Web et Mobile",
     },
     bootdev: {
-      title: "Formation en ligne Développeur Backend",
+      title: "Développement Backend",
     },
   },
 } as const;

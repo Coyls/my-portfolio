@@ -4,7 +4,7 @@ export default {
       title: "Web and Mobile Developer Bachelor's Degree",
     },
     bootdev: {
-      title: "Backend Developer Online Course",
+      title: "Backend Development",
     },
   },
 } as const;

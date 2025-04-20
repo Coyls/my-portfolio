@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 export const Skill: React.FC<PropsWithChildren> = async ({ children }) => {
   return (

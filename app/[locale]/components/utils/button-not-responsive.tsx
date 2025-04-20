@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/locales/client";
 import Link from "next/link";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { toast } from "sonner";
 
 export const ButtonNotResponsive: React.FC<

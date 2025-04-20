@@ -5,9 +5,9 @@ import { useTheme } from "next-themes";
 
 const ThemeSwitch: React.FC = () => {
   const { theme, setTheme } = useTheme();
-
   return (
     <button
+      type="button"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       aria-label="Toggle Theme"
     >

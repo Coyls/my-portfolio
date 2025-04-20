@@ -1,4 +1,3 @@
-import about from "./about";
 import experiences from "./experiences";
 import formations from "./formations";
 import header from "./header";
@@ -8,7 +7,6 @@ import projects from "./projects";
 export default {
   ...header,
   ...hero,
-  ...about,
   ...experiences,
   ...projects,
   ...notResponsive,

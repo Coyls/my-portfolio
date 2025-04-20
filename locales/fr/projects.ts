@@ -1,8 +1,12 @@
 export default {
   projects: {
+    "n8n-infra": {
+      description:
+        "Infrastructure auto-hébergée pour la plateforme d'automatisation n8n. Objectif : créer une solution complète avec monitoring, backup et gestion des conteneurs. Je me suis concentré sur la mise en place d'une architecture sécurisée et maintenable.",
+    },
     septem: {
       description:
-        "Application web pour compter les points et obtenir des statistiques de ses parties du jeu de société 7 Wonders. Objectif : créer une application utile et progresser sur ma stack.",
+        "Application web pour compter les points et obtenir des statistiques de ses parties du jeu de société 7 Wonders. Objectif : créer une application utile et progresser sur mes compétences.",
     },
     ktk: {
       description:

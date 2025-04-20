@@ -2,34 +2,21 @@ export const AboutEn = () => {
   return (
     <>
       <p>
-        My name is Loïc, and I am a fullstack web developer, specializing in
-        <span className="font-bold">TypeScript</span>,{" "}
-        <span className="font-bold">React</span> /{" "}
-        <span className="font-bold">Next.js</span> for the frontend, and{" "}
-        <span className="font-bold">Node.js</span> for the backend. What excites
-        me is building complete applications, from the user interface to the
-        backend architecture, with a focus on smoothness and performance.
+        I&apos;m currently a fullstack web developer, mainly using TypeScript
+        and Next.js. I&apos;m gradually specializing in backend and DevOps, with
+        a desire to understand systems better, to make them more reliable and
+        more fluid. That&apos;s the direction I want to go in.
       </p>
-      <p>I place a high value on three aspects of my work:</p>
-      <ul>
-        <li>
-          <span className="font-bold">Client</span>: fully understanding needs
-          to deliver truly tailored solutions.
-        </li>
-        <li>
-          <span className="font-bold">User</span>: providing a seamless and
-          enjoyable user experience (UX).
-        </li>
-        <li>
-          <span className="font-bold">Developer</span>: writing clean,
-          maintainable, and scalable code to ensure long-term reliability.
-        </li>
-      </ul>
       <p>
-        I am also used to collaborating with designers to ensure coherence
-        between design and development. I particularly enjoy{" "}
-        <span className="font-bold">SaaS B2B</span> projects because they pose
-        exciting technical challenges and give me the opportunity to innovate.
+        I love learning, automating and building simple, useful tools. Right
+        now, I&apos;m spending a lot of time experimenting with self-hosting. I
+        like to understand how things work, deploy it myself, and keep control
+        of what I&apos;m building.
+      </p>
+      <p>
+        Outside of coding, I&apos;m passionate about longboard dancing,
+        cardistry and magic. I love fluidity, whether in a gesture, a
+        transition, or a well-thought-out system.
       </p>
     </>
   );

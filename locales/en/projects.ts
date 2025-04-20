@@ -1,8 +1,12 @@
 export default {
   projects: {
+    "n8n-infra": {
+      description:
+        "Self-hosted infrastructure for the n8n automation platform. Goal: create a complete solution with monitoring, backup, and container management. I focused on setting up a secure and maintainable architecture.",
+    },
     septem: {
       description:
-        "Web application to count points and get statistics for the board game 7 Wonders. Goal: create a useful application and improve my stack.",
+        "Web application to count points and get statistics for the board game 7 Wonders. Goal: create a useful application and improve my skills.",
     },
     ktk: {
       description:

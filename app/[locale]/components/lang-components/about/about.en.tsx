@@ -8,10 +8,11 @@ export const AboutEn = () => {
         more fluid. That&apos;s the direction I want to go in.
       </p>
       <p>
-        I love learning, automating and building simple, useful tools. Right
-        now, I&apos;m spending a lot of time experimenting with self-hosting. I
-        like to understand how things work, deploy it myself, and keep control
-        of what I&apos;m building.
+        I&apos;m working on improving my backend skills. Right now, I&apos;m
+        actively learning with NestJS and following the backend track on
+        Boot.dev. I&apos;m learning how to structure more solid and better
+        organized APIs, and I take the time to understand the foundations behind
+        what I write.
       </p>
       <p>
         Outside of coding, I&apos;m passionate about longboard dancing,

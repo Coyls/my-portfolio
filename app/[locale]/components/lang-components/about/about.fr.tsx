@@ -9,10 +9,11 @@ export const AboutFr = () => {
         que je souhaite aller.
       </p>
       <p>
-        J&apos;aime apprendre, automatiser, et construire des outils simples et
-        utiles. En ce moment, je passe pas mal de temps à expérimenter autour du
-        self-hosting. J&apos;aime comprendre comment fonctionne les choses, les
-        déployer moi-même, et garder la main sur ce que je construis.
+        J&apos;ai envie de progresser en Backend. En ce moment, je me forme
+        activement avec NestJS et le parcours backend de Boot.dev.
+        J&apos;apprends à structurer des APIs plus solides, mieux organisées, et
+        je prends le temps de comprendre les fondations derrière ce que
+        j&apos;écris.
       </p>
       <p>
         En dehors du code, je suis passionné par le longboard dancing, la

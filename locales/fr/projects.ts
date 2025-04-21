@@ -10,15 +10,15 @@ export default {
     },
     ktk: {
       description:
-        "Application web pour un projet scolaire. Objectif : visualiser des données sur une carte. Je me suis occupé du serveur, de la base de données et des graphiques.",
+        "Application web pour un projet de formation. Objectif : visualiser des données sur une carte. Je me suis occupé du serveur, de la base de données et des graphiques.",
     },
     wake: {
       description:
-        "Landing page pour un projet scolaire. J'ai conçu le site du design au développement et utilisé GSAP pour la plupart des animations.",
+        "Landing page conçue dans un contexte de formation. J'ai conçu le site du design au développement et utilisé GSAP pour la plupart des animations.",
     },
     siah: {
       description:
-        "Projet réalisé en une semaine pour un projet scolaire. Je me suis occupé de la plupart des animations du site et créé la logique Flip-book pour les animations au scroll.",
+        "Projet de formation réalisé en une semaine. Je me suis occupé de la plupart des animations du site et créé la logique Flip-book pour les animations au scroll.",
     },
     more: {
       description: {

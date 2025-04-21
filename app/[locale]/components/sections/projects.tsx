@@ -29,7 +29,12 @@ export const Projects: React.FC = async () => {
       <div className="grid grid-cols-1 gap-4 px-0 md:grid-cols-5 md:px-8">
         <Project
           className="md:col-span-3"
-          name="My n8n Infrastructure"
+          name={
+            <>
+              <span className="hidden sm:inline">My n8n Infrastructure</span>
+              <span className="inline sm:hidden">My n8n Infra</span>
+            </>
+          }
           description={t("n8n-infra.description")}
           technologies={[
             SiGnubash,

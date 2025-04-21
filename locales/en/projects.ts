@@ -10,15 +10,15 @@ export default {
     },
     ktk: {
       description:
-        "Web application for a school project. Goal: visualize data on a map. I handled the server, the database, and the charts.",
+        "Web application built as part of a training project. Goal: visualize data on a map. I handled the server, the database, and the charts.",
     },
     wake: {
       description:
-        "Landing page for a school project. I designed the site from scratch, from Design to Development, and used GSAP for most of the animations.",
+        "Landing page built as part of a training project. I designed the site from scratch, from Design to Development, and used GSAP for most of the animations.",
     },
     siah: {
       description:
-        "Project completed in one week for a school assignment. I handled most of the site's animations and created the flip-book logic for scroll animations.",
+        "Built during a one-week workshop. I handled most of the site's animations and created the flip-book logic for scroll animations.",
     },
     more: {
       description: {

@@ -14,6 +14,18 @@ export const SiteConfig = {
     x: "https://x.com/_Coyls",
   },
   formations: {
-    hasDescription: false,
+    gobelins: {
+      isVisible: true,
+      hasDescription: false,
+    },
+    bootdev: {
+      isVisible: false,
+      hasDescription: false,
+    },
+    efrei: {
+      isVisible: true,
+      hasDescription: false,
+    },
   },
+  stack: false,
 } as const;

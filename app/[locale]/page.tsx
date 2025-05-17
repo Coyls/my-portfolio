@@ -1,3 +1,4 @@
+import { SiteConfig } from "@/config/site.config";
 import {
   About,
   Experiences,
@@ -26,8 +27,12 @@ export default async function Home() {
       <Spacer size="md" />
       <Formations />
       <Spacer size="md" />
-      <Stack />
-      <Spacer size="md" />
+      {SiteConfig.stack && (
+        <>
+          <Stack />
+          <Spacer size="md" />
+        </>
+      )}
       <Divider />
       <Footer />
     </main>

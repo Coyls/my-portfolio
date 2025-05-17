@@ -6,5 +6,8 @@ export default {
     bootdev: {
       title: "Développement Backend",
     },
+    efrei: {
+      title: "Mastère Dev Manager Full Stack",
+    },
   },
 } as const;

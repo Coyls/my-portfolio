@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { IconType } from "@icons-pack/react-simple-icons";
@@ -10,6 +11,7 @@ type ProjectProps = {
   name: React.ReactNode;
   description: string;
   technologies: IconType[];
+  badges: string[];
   link: string;
   githubLink?: string;
   className?: string;
@@ -22,6 +24,7 @@ export const Project: React.FC<ProjectProps> = async ({
   link,
   technologies,
   className,
+  badges,
   githubLink,
   responsive = true,
 }) => {
@@ -46,15 +49,23 @@ export const Project: React.FC<ProjectProps> = async ({
           )}
         </div>
         <p className="max-w-lg text-justify text-sm">{description}</p>
-        <div className="flex flex-row gap-4">
-          {technologies.map((Icon, index) => (
-            <Icon
-              key={`${name}-${
-                // biome-ignore lint/suspicious/noArrayIndexKey: Used in paralel with name !
-                index
-              }-icon`}
-            />
-          ))}
+        <div className="flex flex-row flex-wrap justify-between gap-4">
+          <div className="flex flex-row gap-4">
+            {badges.map((badge, index) => (
+              <Badge
+                className="rounded-lg"
+                key={`${name}-${index}-badge`}
+                variant="outline"
+              >
+                {badge}
+              </Badge>
+            ))}
+          </div>
+          <div className="flex flex-row gap-4">
+            {technologies.map((Icon, index) => (
+              <Icon key={`${name}-${index}-icon`} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

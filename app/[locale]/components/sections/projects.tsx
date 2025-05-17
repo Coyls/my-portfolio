@@ -1,4 +1,3 @@
-import { IconQdrant } from "@/components/icons/icon-qdrant";
 import { Button } from "@/components/ui/button";
 import { getScopedI18n } from "@/locales/server";
 import {
@@ -10,9 +9,7 @@ import {
   SiN8n,
   SiNeo4j,
   SiNextdotjs,
-  SiPostgresql,
   SiPrisma,
-  SiResend,
   SiTailwindcss,
   SiTraefikproxy,
   SiTypescript,
@@ -36,13 +33,14 @@ export const Projects: React.FC = async () => {
             </>
           }
           description={t("n8n-infra.description")}
+          badges={["docker", "IA"]}
           technologies={[
             SiGnubash,
             SiDocker,
             SiTraefikproxy,
             SiN8n,
-            IconQdrant,
-            SiPostgresql,
+            // IconQdrant,
+            // SiPostgresql,
           ]}
           link="https://github.com/Coyls/n8n-infra"
           githubLink="https://github.com/Coyls/n8n-infra"
@@ -52,14 +50,8 @@ export const Projects: React.FC = async () => {
           className="md:col-span-2"
           name="Septm"
           description={t("septem.description")}
-          technologies={[
-            SiTypescript,
-            SiNextdotjs,
-            SiTailwindcss,
-            SiPrisma,
-            SiPostgresql,
-            SiResend,
-          ]}
+          badges={["fullstack"]}
+          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma]}
           link="https://septm.app"
         />
 
@@ -67,6 +59,7 @@ export const Projects: React.FC = async () => {
           className="md:col-span-2"
           name="Wake"
           description={t("wake.description")}
+          badges={["frontend"]}
           technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiGreensock]}
           link="https://wake-coyls.vercel.app"
           githubLink="https://github.com/Coyls/wake"
@@ -75,6 +68,7 @@ export const Projects: React.FC = async () => {
         <Project
           className="md:col-span-3"
           name={"KTK | Backend"}
+          badges={["backend", "dataviz"]}
           description={t("ktk.description")}
           technologies={[SiTypescript, SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
           link="https://github.com/Coyls/ktk-dataviz-backend"

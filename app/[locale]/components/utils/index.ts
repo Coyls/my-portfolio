@@ -1,5 +1,6 @@
 export * from "./button-not-responsive";
 export * from "./divider";
+export * from "./formation";
 export * from "./locale-switch";
 export * from "./project";
 export * from "./section";

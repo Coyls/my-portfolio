@@ -8,13 +8,13 @@ export const AboutFr = () => {
         rendre plus fiables, et plus fluides. C&apos;est dans cette direction
         que je souhaite aller.
       </p>
-      <p>
+      {/* <p>
         J&apos;ai envie de progresser en Backend. En ce moment, je me forme
         activement avec NestJS et le parcours backend de Boot.dev.
         J&apos;apprends à structurer des APIs plus solides, mieux organisées, et
         je prends le temps de comprendre les fondations derrière ce que
         j&apos;écris.
-      </p>
+      </p> */}
       <p>
         En dehors du code, je suis passionné par le longboard dancing, la
         cardistry et la magie. J&apos;aime ce qui est fluide, que ce soit dans

@@ -58,8 +58,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-poppins)"],
-        caption: ["var(--font-questrial)"],
+        sans: ["var(--font-poppins)", "sans-serif"],
+        caption: ["var(--font-questrial)", "sans-serif"],
       },
       fontSize: {
         sm: "0.750rem", // description

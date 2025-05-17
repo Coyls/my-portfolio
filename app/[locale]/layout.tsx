@@ -8,14 +8,18 @@ import { Providers } from "./providers";
 
 const questrial = Questrial({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400"],
   variable: "--font-questrial",
+  preload: true,
+  display: "swap",
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
+  preload: true,
+  display: "swap",
 });
 
 export const metadata: Metadata = {

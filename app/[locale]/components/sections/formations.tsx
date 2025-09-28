@@ -14,13 +14,13 @@ export const Formations: React.FC = async () => {
   return (
     <Section className="flex flex-col gap-8">
       <h2>formations.</h2>
-      <Formation
+      {/* <Formation
         title={t("efrei.title")}
         subtitle="EFREI"
         date={dateEfrei}
         location="Bordeaux"
         isVisible={efrei.isVisible}
-      />
+      /> */}
       <Formation
         title={t("bootdev.title")}
         subtitle="Boot.dev"

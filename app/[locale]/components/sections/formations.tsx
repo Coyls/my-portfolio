@@ -1,13 +1,13 @@
 import { SiteConfig } from "@/config/site.config";
-import { isAfterTargetDate } from "@/lib/date.utils";
+// import { isAfterTargetDate } from "@/lib/date.utils";
 import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import { GobelinsEn, GobelinsFr } from "../lang-components";
 import { Formation, Section } from "../utils";
 
 export const Formations: React.FC = async () => {
-  const afterAugust = isAfterTargetDate("2025-08-31");
-  const dateEfrei = afterAugust ? "2025 - 2027" : "sept. 2025 - 2027";
-  const { gobelins, bootdev, efrei } = SiteConfig.formations;
+  // const afterAugust = isAfterTargetDate("2025-08-31");
+  // const dateEfrei = afterAugust ? "2025 - 2027" : "sept. 2025 - 2027";
+  const { gobelins, bootdev } = SiteConfig.formations;
   const t = await getScopedI18n("formations");
   const locale = await getCurrentLocale();
 

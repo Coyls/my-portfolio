@@ -1,8 +1,8 @@
 import { getScopedI18n } from "@/locales/server";
+import { MapPin } from "lucide-react";
 import Image from "next/image";
-import { ButtonGithub, ButtonLinkedin, ButtonMail, ButtonX } from "../socials";
+import { ButtonGithub, ButtonLinkedin, ButtonMail } from "../socials";
 import { Section } from "../utils";
-
 export const Hero: React.FC = async () => {
   const t = await getScopedI18n("hero");
 
@@ -14,13 +14,12 @@ export const Hero: React.FC = async () => {
           <h3 className="text-center md:text-left">{t("subtitle")}</h3>
           <h3 className="text-center md:text-left">{t("subtitle2")}</h3>
           {/* // ? Localisation */}
-          {/* <div className="flex flex-row gap-4">
+          <div className="flex flex-row gap-4">
             <MapPin size={18} />
-            City, Country
-          </div> */}
+            Annecy, France
+          </div>
           <div className="flex flex-row justify-center gap-4 md:justify-start">
             <ButtonGithub />
-            <ButtonX />
             <ButtonLinkedin />
             <ButtonMail />
           </div>

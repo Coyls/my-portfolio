@@ -6,12 +6,11 @@ export const SiteConfig = {
   contactEmail: "loic.grecofr@gmail.com",
   disponibility: {
     isAvailable: true,
-    message: "ALTERNANCE", // "FREELANCE WORK"
+    message: "CDI",
   },
   links: {
     github: "https://github.com/Coyls",
     linkedin: "https://www.linkedin.com/in/loïc-greco",
-    x: "https://x.com/_Coyls",
   },
   formations: {
     gobelins: {
@@ -20,10 +19,6 @@ export const SiteConfig = {
     },
     bootdev: {
       isVisible: false,
-      hasDescription: false,
-    },
-    efrei: {
-      isVisible: true,
       hasDescription: false,
     },
   },

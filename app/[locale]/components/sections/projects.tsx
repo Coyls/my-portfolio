@@ -52,7 +52,7 @@ export const Projects: React.FC = async () => {
           description={t("septem.description")}
           badges={["fullstack"]}
           technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma]}
-          link="https://septm.app"
+          link="https://septm.xyz"
         />
 
         <Project

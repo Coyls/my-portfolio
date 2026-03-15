@@ -5,7 +5,7 @@ import {
   SiDocker,
   SiExpress,
   SiGnubash,
-  SiGreensock,
+  SiGreensock, // TODO: Remplacer par GSAP une fois que l'update Next16 et react-simple-icon faite !
   SiN8n,
   SiNeo4j,
   SiNextdotjs,

@@ -14,7 +14,7 @@ export const ButtonAvailable: React.FC = async () => {
       <p>{t("available")}</p>
       <Link href={`mailto:${SiteConfig.contactEmail}`}>
         <p className="text-primary underline-offset-4 hover:underline">
-          {SiteConfig.disponibility.message}
+          {SiteConfig.disponibility.poste}
         </p>
       </Link>
     </div>

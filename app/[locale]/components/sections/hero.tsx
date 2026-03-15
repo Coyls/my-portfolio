@@ -13,8 +13,8 @@ export const Hero: React.FC = async () => {
         <div className="flex flex-col md:pl-8">
           <h3 className="text-center md:text-left">{t("subtitle")}</h3>
           <h3 className="text-center md:text-left">{t("subtitle2")}</h3>
-          {/* // ? Localisation */}
-          <div className="flex flex-row gap-4">
+          {/* ?? Localisation */}
+          <div className="flex flex-row gap-2">
             <MapPin size={18} />
             Annecy, France
           </div>

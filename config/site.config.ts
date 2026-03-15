@@ -6,7 +6,7 @@ export const SiteConfig = {
   contactEmail: "loic.grecofr@gmail.com",
   disponibility: {
     isAvailable: true,
-    message: "CDI",
+    poste: "CDI",
   },
   links: {
     github: "https://github.com/Coyls",
@@ -15,11 +15,15 @@ export const SiteConfig = {
   formations: {
     gobelins: {
       isVisible: true,
-      hasDescription: false,
+      hasDescription: true,
     },
     bootdev: {
       isVisible: false,
       hasDescription: false,
+    },
+    cocadmin: {
+      isVisible: true,
+      hasDescription: true,
     },
   },
   stack: false,

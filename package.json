@@ -11,7 +11,7 @@
     "knip": "knip"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^10.0.0",
+    "@icons-pack/react-simple-icons": "^10.2.0",
     "@radix-ui/react-slot": "^1.1.2",
     "@vercel/analytics": "^1.4.1",
     "class-variance-authority": "^0.7.0",

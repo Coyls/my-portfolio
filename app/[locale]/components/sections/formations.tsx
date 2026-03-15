@@ -10,7 +10,7 @@ import {
   SiPrometheus,
   SiTerraform,
 } from "@icons-pack/react-simple-icons";
-import { GobelinsEn, GobelinsFr } from "../lang-components";
+import { SmallGobelinsEn, SmallGobelinsFr } from "../lang-components";
 import { Formation, Section } from "../utils";
 
 export const Formations: React.FC = async () => {
@@ -55,11 +55,12 @@ export const Formations: React.FC = async () => {
         subtitle="GOBELINS, L'école de l'image"
         date="2020 - 2023"
         location="Annecy"
+        link="https://www.gobelins.fr/"
         isVisible={gobelins.isVisible}
       >
         {gobelins.hasDescription && (
           <article className="flex flex-col gap-4 text-sm md:text-base">
-            {locale === "fr" ? <GobelinsFr /> : <GobelinsEn />}
+            {locale === "fr" ? <SmallGobelinsFr /> : <SmallGobelinsEn />}
           </article>
         )}
       </Formation>

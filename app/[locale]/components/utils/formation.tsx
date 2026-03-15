@@ -23,7 +23,7 @@ export const Formation: React.FC<FormationProps> = async ({
   if (!isVisible) return null;
 
   return (
-    <div className="flex flex-col gap-6 px-0 md:px-8">
+    <div className="flex flex-col gap-4 px-0 md:px-8">
       <div className="flex flex-col justify-between md:flex-row">
         <div>
           <h3>{title}</h3>

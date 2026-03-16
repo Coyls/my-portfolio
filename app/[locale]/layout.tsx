@@ -28,13 +28,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(SiteConfig.prodUrl),
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+export default async function RootLayout(
+  props: Readonly<{
+    children: React.ReactNode;
+    params: { locale: string };
+  }>
+) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html lang="en" style={{ colorScheme: "dark" }} className="dark">
       <body

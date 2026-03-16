@@ -1,4 +1,7 @@
 
+import next from "eslint-config-next";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
 import { fixupConfigRules } from "@eslint/compat";
 import { FlatCompat } from "@eslint/eslintrc";
 import pluginJs from "@eslint/js";
@@ -12,12 +15,14 @@ import tseslint from "typescript-eslint";
 const compat = new FlatCompat();
 
 export default [
+  ...next,
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   /** General Configuration **/
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
-
   /** TypeScript Configuration **/
   {
     languageOptions: {
@@ -31,10 +36,8 @@ export default [
   },
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
-
   /** TailwindCSS Configuration **/
   ...tailwind.configs["flat/recommended"],
-
   /** React Configuration **/
   ...fixupConfigRules(pluginReactConfig),
   {
@@ -43,16 +46,13 @@ export default [
     },
     rules: hooksPlugin.configs.recommended.rules,
   },
-
   /** Next.js Configuration **/
   {
     ignores: [".next/"],
   },
   ...fixupConfigRules(compat.extends("plugin:@next/next/core-web-vitals")),
-
   /** Prettier Configuration **/
   prettier,
-
   /** Custom Rules **/
   {
     rules: {
@@ -102,7 +102,6 @@ export default [
       ],
     },
   },
-
   /** Ignore Files **/
   {
     ignores: [
@@ -121,5 +120,5 @@ export default [
       "eslint.config.mjs",
       "**/worker.js",
     ],
-  },
+  }
 ];

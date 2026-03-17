@@ -1,7 +1,7 @@
+import { IconLinkedin } from "@/components/icons/icon-linkedin";
 import { buttonVariants } from "@/components/ui/button";
 import { SiteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils";
-import { SiLinkedin } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
 export const ButtonLinkedin: React.FC = async () => {
@@ -11,7 +11,7 @@ export const ButtonLinkedin: React.FC = async () => {
       target="_blank"
       className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <SiLinkedin size={20} className="text-primary" />
+      <IconLinkedin size={20} className="text-primary" />
     </Link>
   );
 };

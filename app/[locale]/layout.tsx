@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { SiteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils";
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Poppins, Questrial } from "next/font/google";
 import "./globals.css";
@@ -28,24 +29,20 @@ export const metadata: Metadata = {
   metadataBase: new URL(SiteConfig.prodUrl),
 };
 
-export default async function RootLayout(
-  props: Readonly<{
-    children: React.ReactNode;
-    params: { locale: string };
-  }>
-) {
-  const params = await props.params;
-
-  const {
-    children
-  } = props;
-
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <html lang="en" style={{ colorScheme: "dark" }} className="dark">
       <body
         className={cn(questrial.variable, poppins.variable, "h-full font-sans")}
       >
-        <Providers locale={params.locale}>
+        <Providers locale={locale}>
           {children}
           <Toaster />
         </Providers>

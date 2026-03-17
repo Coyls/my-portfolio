@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { getScopedI18n } from "@/locales/server";
 import {
-  SiD3dotjs,
+  SiD3,
   SiDocker,
   SiExpress,
   SiGnubash,
-  SiGreensock, // TODO: Remplacer par GSAP une fois que l'update Next16 et react-simple-icon faite !
+  SiGsap,
   SiN8n,
   SiNeo4j,
   SiNextdotjs,
@@ -60,7 +60,7 @@ export const Projects: React.FC = async () => {
           name="Wake"
           description={t("wake.description")}
           badges={["frontend"]}
-          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiGreensock]}
+          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiGsap]}
           link="https://wake-coyls.vercel.app"
           githubLink="https://github.com/Coyls/wake"
         />
@@ -70,7 +70,7 @@ export const Projects: React.FC = async () => {
           name={"KTK | Backend"}
           badges={["backend", "dataviz"]}
           description={t("ktk.description")}
-          technologies={[SiTypescript, SiExpress, SiD3dotjs, SiNeo4j, SiDocker]}
+          technologies={[SiTypescript, SiExpress, SiD3, SiNeo4j, SiDocker]}
           link="https://github.com/Coyls/ktk-dataviz-backend"
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
         />

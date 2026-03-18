@@ -8,13 +8,15 @@ export const Hero: React.FC = async () => {
 
   return (
     <Section className="flex flex-col-reverse items-center gap-4 md:flex-row md:gap-12">
-      <div className="flex flex-[3] flex-col items-center md:items-start">
+      <div className="flex flex-3 flex-col items-center gap-6 md:items-start">
         <h1>Loïc Greco</h1>
-        <div className="flex flex-col md:pl-8">
-          <h3 className="text-center md:text-left">{t("subtitle")}</h3>
-          <h3 className="text-center md:text-left">{t("subtitle2")}</h3>
+        <div className="flex flex-col gap-4 md:pl-8">
+          <span>
+            <h3 className="text-center md:text-left">{t("subtitle")}</h3>
+            <h3 className="text-center md:text-left">{t("subtitle2")}</h3>
+          </span>
           {/* ?? Localisation */}
-          <div className="flex flex-row gap-2">
+          <div className="m-auto flex flex-row gap-2 md:m-0">
             <MapPin size={18} />
             Annecy, France
           </div>
@@ -25,7 +27,7 @@ export const Hero: React.FC = async () => {
           </div>
         </div>
       </div>
-      <div className="flex-[1]">
+      <div className="flex-1">
         <div className="relative size-48 md:size-64">
           <Image
             className="rounded-lg"

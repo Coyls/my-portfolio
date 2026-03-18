@@ -16,8 +16,8 @@ export const Stack: React.FC = async () => {
               key={name}
               className={cn(
                 "flex flex-col items-center gap-4 p-8 md:gap-8",
-                isLast ? "" : "md:border-r-[1px] md:border-r-accent",
-                isLast ? "" : "border-b-[1px] border-b-accent md:border-b-0",
+                isLast ? "" : "md:border-r md:border-r-accent",
+                isLast ? "" : "border-b border-b-accent md:border-b-0",
               )}
             >
               <h3>{name}</h3>

@@ -15,7 +15,7 @@ export const Divider: React.FC<DividerProps> = async ({
       <hr
         className={cn(
           "border-accent",
-          orientation === "horizontal" ? "h-[1px] w-full" : "h-full w-[1px]",
+          orientation === "horizontal" ? "h-px w-full" : "h-full w-px",
           className,
         )}
       />

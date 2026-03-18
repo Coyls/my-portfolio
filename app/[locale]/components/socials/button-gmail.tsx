@@ -11,7 +11,7 @@ export const ButtonMail: React.FC = async () => {
       target="_blank"
       className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <SiGmail size={20} className="text-primary" />
+      <SiGmail size={SiteConfig.iconSize} className="text-primary" />
     </Link>
   );
 };

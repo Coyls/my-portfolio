@@ -22,7 +22,7 @@ export const ButtonGithub: React.FC<ButtonGithubProps> = async ({
         className,
       )}
     >
-      <SiGithub size={20} className="text-primary" />
+      <SiGithub size={SiteConfig.iconSize} className="text-primary" />
     </Link>
   );
 };

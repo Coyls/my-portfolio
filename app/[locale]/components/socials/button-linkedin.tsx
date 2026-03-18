@@ -11,7 +11,7 @@ export const ButtonLinkedin: React.FC = async () => {
       target="_blank"
       className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
     >
-      <IconLinkedin size={20} className="text-primary" />
+      <IconLinkedin size={SiteConfig.iconSize} className="text-primary" />
     </Link>
   );
 };

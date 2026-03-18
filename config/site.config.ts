@@ -4,6 +4,7 @@ export const SiteConfig = {
   primary: "#FFAC4D",
   prodUrl: "https://loic-greco.fr",
   contactEmail: "loic.grecofr@gmail.com",
+  iconSize: 20,
   disponibility: {
     isAvailable: true,
     poste: "CDI",

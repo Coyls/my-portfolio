@@ -27,17 +27,17 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^25.5.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.1.7",
-    "knip": "^5.87.0",
+    "knip": "^6.0.2",
     "postcss": "^8.5.8",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.2.1",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
   },
   "pnpm": {
@@ -46,7 +46,8 @@
       "@types/react-dom": "19.2.3"
     },
     "onlyBuiltDependencies": [
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ]
   }
 }

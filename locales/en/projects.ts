@@ -2,7 +2,7 @@ export default {
   projects: {
     "n8n-infra": {
       description:
-        "Self-hosted infrastructure for the n8n automation platform. Goal: create a complete solution with monitoring, backup, and container management. I focused on setting up a secure and maintainable architecture.",
+        "Self-hosted infrastructure for n8n. Goal: create a complete solution easily modular.",
     },
     septem: {
       description:

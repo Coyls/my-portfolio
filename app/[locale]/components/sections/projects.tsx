@@ -4,10 +4,12 @@ import {
   SiD3,
   SiDocker,
   SiExpress,
+  SiGithubactions,
   SiGnubash,
   SiGsap,
   SiN8n,
   SiNeo4j,
+  SiNestjs,
   SiNextdotjs,
   SiPrisma,
   SiTailwindcss,
@@ -26,14 +28,31 @@ export const Projects: React.FC = async () => {
       <div className="grid grid-cols-1 gap-4 px-0 md:grid-cols-5 md:px-8">
         <Project
           className="md:col-span-3"
+          name="Septm"
+          description={t("septem.description")}
+          badges={["fullstack"]}
+          technologies={[
+            SiTypescript,
+            SiNestjs,
+            SiNextdotjs,
+            SiPrisma,
+            SiDocker,
+            SiGithubactions,
+          ]}
+          link="https://septm.xyz"
+          githubLink="https://github.com/Coyls/septm-backend"
+        />
+
+        <Project
+          className="md:col-span-2"
           name={
             <>
-              <span className="hidden sm:inline">My n8n Infrastructure</span>
-              <span className="inline sm:hidden">My n8n Infra</span>
+              {/* <span className="hidden sm:inline">My n8n Infrastructure</span> */}
+              <span /* className="inline sm:hidden" */>My n8n Infra</span>
             </>
           }
           description={t("n8n-infra.description")}
-          badges={["docker", "IA"]}
+          badges={["docker"]}
           technologies={[
             SiGnubash,
             SiDocker,
@@ -44,15 +63,6 @@ export const Projects: React.FC = async () => {
           ]}
           link="https://github.com/Coyls/n8n-infra"
           githubLink="https://github.com/Coyls/n8n-infra"
-        />
-
-        <Project
-          className="md:col-span-2"
-          name="Septm"
-          description={t("septem.description")}
-          badges={["fullstack"]}
-          technologies={[SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma]}
-          link="https://septm.xyz"
         />
 
         <Project
@@ -75,7 +85,7 @@ export const Projects: React.FC = async () => {
           githubLink="https://github.com/Coyls/ktk-dataviz-backend"
         />
 
-        <div className="rounded-lg bg-primary/5 p-4 text-center text-sm md:col-span-5 md:p-8">
+        <div className="bg-primary/5 rounded-lg p-4 text-center text-sm md:col-span-5 md:p-8">
           <span className="hidden md:inline">
             {t("more.description.desktop")}
           </span>

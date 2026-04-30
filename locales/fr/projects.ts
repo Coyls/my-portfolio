@@ -2,7 +2,7 @@ export default {
   projects: {
     "n8n-infra": {
       description:
-        "Infrastructure auto-hébergée pour la plateforme d'automatisation n8n. Objectif : créer une solution complète avec monitoring, backup et gestion des conteneurs. Je me suis concentré sur la mise en place d'une architecture sécurisée et maintenable.",
+        "Infrastructure auto-hébergée pour n8n. Objectif : créer une solution complète et facilement modulable",
     },
     septem: {
       description:
